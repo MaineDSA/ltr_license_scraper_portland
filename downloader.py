@@ -4,6 +4,8 @@ import re
 
 TESTMODE = False
 PAGESIZE = 200
+if TESTMODE:
+	PAGESIZE = 20
 
 s = requests.Session()
 
