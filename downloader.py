@@ -10,16 +10,16 @@ licensetypes = {
 	'Single Family': 'ddf09feb-ce7d-4437-839d-33296fd1c849_5c7dadf7-db4e-4d4d-a1fa-c109dbf3c0c5',
 	'Two Family': 'ddf09feb-ce7d-4437-839d-33296fd1c849_0b3794bb-b86f-467c-b6c0-6d473a8c6966',
 }
+headers = {
+	'tenantId': '1',
+	'tenantName': 'EnerGovProd',
+	'Referer': 'https://selfservice.portlandmaine.gov/energov_prod/selfservice',
+	'DNT': '1',
+}
 
 def license_details(license: str):
 	print(f'Getting license details for {license}.')
 	url = 'https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/customfields/data'
-	headers = {
-		'tenantId': '1',
-		'tenantName': 'EnerGovProd',
-		'Referer': 'https://selfservice.portlandmaine.gov/energov_prod/selfservice',
-		'DNT': '1',
-	}
 	payload = {
 		"EntityId": license,
 		"ModuleId": 8,
@@ -59,13 +59,6 @@ def license_details(license: str):
 
 def license_compiler():
 	url = 'https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/search/search'
-	headers = {
-		'tenantId': '1',
-		'tenantName': 'EnerGovProd',
-		'Referer': 'https://selfservice.portlandmaine.gov/energov_prod/selfservice',
-		'DNT': '1',
-	}
-
 	def license_query(licensetype: str, page_num:int):
 		payload = {
 			"Keyword": "",
