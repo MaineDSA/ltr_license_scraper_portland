@@ -1,10 +1,8 @@
-from time import sleep
 import requests
 import pandas as pd
 import re
 
 TESTMODE = False
-DELAYTIME = .4
 PAGESIZE = 200
 
 licensetypes = {
@@ -57,7 +55,6 @@ def license_details(license: str):
 	rent_data = {}
 	for licensedata in response_json:
 		rent_data[get_label(licensedata)] = get_value(licensedata)
-	sleep(DELAYTIME)
 	return rent_data
 
 def license_compiler():
@@ -737,7 +734,6 @@ def license_compiler():
 					if 'EntityResults' in licenses_found_json['Result']:
 						for license_found in licenses_found_json['Result']['EntityResults']:
 							licenses.append(license_found)
-				sleep(DELAYTIME)
 				license_pages_current = license_pages_current + 1
 		if TESTMODE:
 			break
