@@ -608,10 +608,7 @@ def license_compiler():
 			"SortAscending": True,
 		}
 		response_json = s.post(url, headers=headers, json=payload).json()
-		foundpages = 0
-		if 'Result' in response_json:
-			if 'TotalPages' in response_json['Result']:
-				foundpages = response_json['Result']['TotalPages']
+		foundpages = response_json.get('Result', {}).get('TotalPages', 0)
 		return foundpages
 
 	licenses = []
