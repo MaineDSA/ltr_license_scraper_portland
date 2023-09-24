@@ -16,7 +16,7 @@ licensetypes = {
 }
 
 def license_details(license: str):
-	print('Getting license details for ' + license + '.')
+	print(f'Getting license details for {license}.')
 	url = 'https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/customfields/data'
 	headers = {
 		'tenantId': '1',
@@ -726,14 +726,14 @@ def license_compiler():
 	for licensetype in licensetypes:
 		license_pages_total = 0
 		license_pages_current = 1
-		print('Processing ' + licensetype + ' licenses.')
+		print(f'Processing {licensetype} licenses.')
 		license_pages_total = license_query_page_count(licensetype)
-		print('Found ' + str(license_pages_total) + ' pages.')
+		print(f'Found {str(license_pages_total)} pages.')
 		if license_pages_total > 0:
 			if TESTMODE:
 				license_pages_total = 1
 			for n in range(license_pages_current, license_pages_total + 1):
-				print('Retrieving page ' + str(license_pages_current) + ' of ' + licensetype + '.')
+				print(f'Retrieving page {str(license_pages_current)} of {licensetype}.')
 				licenses_found_json = json.loads(license_query(licensetype, license_pages_current))
 				if 'Result' in licenses_found_json:
 					if 'EntityResults' in licenses_found_json['Result']:
