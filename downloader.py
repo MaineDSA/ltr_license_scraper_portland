@@ -143,7 +143,7 @@ def license_compiler():
 				"EnableDescriptionSearchForBLicense": False,
 				"EnableDescriptionSearchForPLicense": False,
 				"PageNumber": page_num,
-				"PageSize": 50,
+				"PageSize": PAGESIZE,
 				"SortBy": "relevance",
 				"SortAscending": False,
 			},
