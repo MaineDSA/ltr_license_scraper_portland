@@ -2,9 +2,9 @@ from re import search
 from requests import Session
 import pandas as pd
 
-TESTMODE = True
+TESTMODE = False
 PAGESIZE = 200
-if TESTMODE:
+if TESTMODE: # Faster to test with 20
 	PAGESIZE = 20
 
 licensetypes = {
@@ -337,15 +337,13 @@ def license_compiler():
 	for licensetype in licensetypes:
 		license_pages_total, licenses_found = license_query(licensetype, 1)
 		print(f'Retrieved page 1 of {license_pages_total} pages of {licensetype}.')
-		if license_pages_total > 0:
-			licenses.extend(licenses_found)
-			if not TESTMODE:
-				for n in range(2, license_pages_total + 1):
-					licenses_found = license_query(licensetype, n)
-					print(f'Retrieved page {n} of {license_pages_total} pages of {licensetype}.')
-					licenses.extend(licenses_found)
-		if TESTMODE:
+		licenses.extend(licenses_found)
+		if TESTMODE: # 1 page is enough when testing
 			break
+		for n in range(2, license_pages_total + 1):
+			license_pages_total, licenses_found = license_query(licensetype, n)
+			print(f'Retrieved page {n} of {license_pages_total} pages of {licensetype}.')
+			licenses.extend(licenses_found)
 	return pd.DataFrame(data=licenses)
 
 # Get all licenses
