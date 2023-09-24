@@ -5,6 +5,8 @@ import re
 TESTMODE = False
 PAGESIZE = 200
 
+s = requests.Session()
+
 licensetypes = {
 	'Multi Family': 'ddf09feb-ce7d-4437-839d-33296fd1c849_c7f4be57-4935-461c-bcf1-8d89c7973b81',
 	'Single Family': 'ddf09feb-ce7d-4437-839d-33296fd1c849_5c7dadf7-db4e-4d4d-a1fa-c109dbf3c0c5',
@@ -26,7 +28,7 @@ def license_details(license: str):
 		"LayoutId": "b589c49c-cc17-435d-b2d8-43a1e10e5b6d",
 		"OnlineLayoutId": "e7d5dda1-27cb-4d0d-8128-58e979697587"
 	}
-	response_json = requests.post(url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
+	response_json = s.post(url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
 
 	def get_label(data: dict):
 		if data['Label'] != '':
@@ -162,7 +164,7 @@ def license_compiler():
 			"SortBy": "relevance",
 			"SortAscending": True,
 		}
-		return requests.post(url, headers=headers, json=payload).json()
+		return s.post(url, headers=headers, json=payload).json()
 
 	def license_query_page_count(licensetype: str):
 		payload = {
@@ -485,7 +487,7 @@ def license_compiler():
 			"SortBy": "relevance",
 			"SortAscending": True,
 		}
-		response_json = requests.post(url, headers=headers, json=payload).json()
+		response_json = s.post(url, headers=headers, json=payload).json()
 		foundpages = 0
 		if 'Result' in response_json:
 			if 'TotalPages' in response_json['Result']:
