@@ -1,7 +1,6 @@
 import os
 import time
 import requests
-import json
 import pandas as pd
 import re
 
@@ -30,7 +29,7 @@ def license_details(license: str):
 		"LayoutId": "b589c49c-cc17-435d-b2d8-43a1e10e5b6d",
 		"OnlineLayoutId": "e7d5dda1-27cb-4d0d-8128-58e979697587"
 	}
-	response_json = json.loads(requests.post(url, headers=headers, json=payload).text)['Result']['CustomGroups'][0]['CustomFields']
+	response_json = requests.post(url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
 
 	def get_label(data: dict):
 		if data['Label'] != '':
@@ -392,7 +391,7 @@ def license_compiler():
 			"SortBy": "relevance",
 			"SortAscending": True,
 		}
-		return requests.post(url, headers=headers, json=payload).text
+		return requests.post(url, headers=headers, json=payload).json()
 
 	def license_query_page_count(licensetype: str):
 		payload = {
@@ -715,7 +714,7 @@ def license_compiler():
 			"SortBy": "relevance",
 			"SortAscending": True,
 		}
-		response_json = json.loads(requests.post(url, headers=headers, json=payload).text)
+		response_json = requests.post(url, headers=headers, json=payload).json()
 		foundpages = 0
 		if 'Result' in response_json:
 			if 'TotalPages' in response_json['Result']:
@@ -734,7 +733,7 @@ def license_compiler():
 				license_pages_total = 1
 			for n in range(license_pages_current, license_pages_total + 1):
 				print(f'Retrieving page {str(license_pages_current)} of {licensetype}.')
-				licenses_found_json = json.loads(license_query(licensetype, license_pages_current))
+				licenses_found_json = license_query(licensetype, license_pages_current)
 				if 'Result' in licenses_found_json:
 					if 'EntityResults' in licenses_found_json['Result']:
 						for license_found in licenses_found_json['Result']['EntityResults']:
