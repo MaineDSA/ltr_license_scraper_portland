@@ -1,13 +1,11 @@
-import requests
+from re import search
+from requests import Session
 import pandas as pd
-import re
 
 TESTMODE = True
 PAGESIZE = 200
 if TESTMODE:
 	PAGESIZE = 20
-
-s = requests.Session()
 
 licensetypes = {
 	'Multi Family': 'ddf09feb-ce7d-4437-839d-33296fd1c849_c7f4be57-4935-461c-bcf1-8d89c7973b81',
@@ -38,7 +36,7 @@ def license_details(license: str):
 			unit['Column0']['Value']: {
 				get_label(unit[column]): unit[column]['Value']
 				for column in unit
-				if re.search("^Column", column) and unit[column]
+				if search("^Column", column) and unit[column]
 			}
 			for unit in licensedata['CustomFieldTableRows']
 		}
@@ -51,12 +49,7 @@ def license_details(license: str):
 	}
 
 	print(f'Getting license details for {license}.')
-	try:
-		response_json = s.post(license_url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
-	except Exception as e:
-		print(f'Error occurred while fetching license details: {str(e)}')
-		return {}
-
+	response_json = s.post(license_url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
 	return {get_label(licensedata): get_value(licensedata) for licensedata in response_json}
 
 def license_compiler():
@@ -356,8 +349,9 @@ def license_compiler():
 	return pd.DataFrame(data=licenses)
 
 # Get all licenses
-df = license_compiler()
-# Add detail from individual license pages
-df['businessLicense'] = df['CaseId'].apply(license_details)
-# Write it to CSV
-df.to_csv(r'./saved.csv', encoding='utf-8', index=False)
+with Session() as s:
+	df = license_compiler()
+	# Add detail from individual license pages
+	df['businessLicense'] = df['CaseId'].apply(license_details)
+	# Write it to CSV
+	df.to_csv(r'./saved.csv', encoding='utf-8', index=False)
