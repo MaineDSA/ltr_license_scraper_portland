@@ -27,6 +27,6 @@ pip install requests pandas
 
 2. Open the script in a text editor and modify the following variables if needed:
 
-   - `TESTMODE`: Set this to `True` if you want to test the program with a smaller number of licenses (20 licenses per license type) and only iterating through a Multi Family licenses. Set it to `False` if you want to download all licenses (200 licenses per license type).
+   - `TESTMODE`: Set this to `True` if you want to test the program with small number of licenses (1 page of 20 licenses -- only iterating through Multi Family licenses). Set it to `False` if you want to download all Long Term Rental licenses.
 
    - `PAGESIZE`: Set this to the desired number of licenses per page
