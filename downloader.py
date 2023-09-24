@@ -33,13 +33,7 @@ def license_details(license: str):
 	response_json = s.post(url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
 
 	def get_label(data: dict):
-		if data['Label'] != '':
-			return data['Label']
-		elif data['FieldName'] != '':
-			return data['FieldName']
-		elif data['Id'] != '':
-			return str(data['Id'])
-		return ''
+		return data['Label'] or data['FieldName'] or data['CustomField'] or str(data['Id']) or ''
 
 	def get_value(licensedata: dict):
 		if licensedata['CustomFieldTableRows'] != None:
@@ -50,7 +44,7 @@ def license_details(license: str):
 					for column in unit:
 						if re.search("^Column", column):
 							if unit[column]:
-								unitdata[unit[column]['CustomField']] = unit[column]['Value']
+								unitdata[get_label(unit[column])] = unit[column]['Value']
 					unitsdata[unit['Column0']['Value']] = unitdata
 				return unitsdata
 			return {}
