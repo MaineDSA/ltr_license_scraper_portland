@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import re
 
-TESTMODE = False
+TESTMODE = True
 PAGESIZE = 200
 if TESTMODE:
 	PAGESIZE = 20
@@ -20,43 +20,47 @@ headers = {
 	'Referer': 'https://selfservice.portlandmaine.gov/energov_prod/selfservice',
 	'DNT': '1',
 }
+license_url = 'https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/customfields/data'
+query_url = 'https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/search/search'
 
 def license_details(license: str):
-	print(f'Getting license details for {license}.')
-	url = 'https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/customfields/data'
+
+	def get_label(data: dict):
+		return data['Label'] or data['FieldName'] or data['CustomField'] or str(data['Id']) or ''
+
+	def get_value(licensedata: dict):
+		if licensedata['CustomFieldTableRows'] is None:
+			return licensedata['Value']
+		elif licensedata['CustomFieldTableRows'] == []:
+			return {}
+
+		return {
+			unit['Column0']['Value']: {
+				get_label(unit[column]): unit[column]['Value']
+				for column in unit
+				if re.search("^Column", column) and unit[column]
+			}
+			for unit in licensedata['CustomFieldTableRows']
+		}
+
 	payload = {
 		"EntityId": license,
 		"ModuleId": 8,
 		"LayoutId": "b589c49c-cc17-435d-b2d8-43a1e10e5b6d",
 		"OnlineLayoutId": "e7d5dda1-27cb-4d0d-8128-58e979697587"
 	}
-	response_json = s.post(url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
 
-	def get_label(data: dict):
-		return data['Label'] or data['FieldName'] or data['CustomField'] or str(data['Id']) or ''
+	print(f'Getting license details for {license}.')
+	try:
+		response_json = s.post(license_url, headers=headers, json=payload).json()['Result']['CustomGroups'][0]['CustomFields']
+	except Exception as e:
+		print(f'Error occurred while fetching license details: {str(e)}')
+		return {}
 
-	def get_value(licensedata: dict):
-		if licensedata['CustomFieldTableRows'] != None:
-			if licensedata['CustomFieldTableRows'] != []:
-				unitsdata = {}
-				for unit in licensedata['CustomFieldTableRows']:
-					unitdata = {}
-					for column in unit:
-						if re.search("^Column", column):
-							if unit[column]:
-								unitdata[get_label(unit[column])] = unit[column]['Value']
-					unitsdata[unit['Column0']['Value']] = unitdata
-				return unitsdata
-			return {}
-		return licensedata['Value']
-
-	rent_data = {}
-	for licensedata in response_json:
-		rent_data[get_label(licensedata)] = get_value(licensedata)
-	return rent_data
+	return {get_label(licensedata): get_value(licensedata) for licensedata in response_json}
 
 def license_compiler():
-	url = 'https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/search/search'
+
 	def license_query(licensetype: str, page_num:int):
 		payload = {
 			"Keyword": "",
@@ -331,7 +335,9 @@ def license_compiler():
 			"SortBy": "relevance",
 			"SortAscending": True,
 		}
-		return s.post(url, headers=headers, json=payload).json()
+		response = s.post(query_url, headers=headers, json=payload).json()
+		licenses = response.get('Result', {}).get('EntityResults', [])
+		return licenses
 
 	def license_query_page_count(licensetype: str):
 		payload = {
@@ -607,27 +613,25 @@ def license_compiler():
 			"SortBy": "relevance",
 			"SortAscending": True,
 		}
-		response_json = s.post(url, headers=headers, json=payload).json()
-		foundpages = response_json.get('Result', {}).get('TotalPages', 0)
-		return foundpages
+		response = s.post(query_url, headers=headers, json=payload).json()
+		licenses = response.get('Result', {}).get('EntityResults', [])
+		foundpages = response.get('Result', {}).get('TotalPages', 0)
+		return foundpages, licenses
 
 	licenses = []
 	for licensetype in licensetypes:
-		print(f'Processing {licensetype} licenses.')
-		license_pages_total = license_query_page_count(licensetype)
-		print(f'Found {license_pages_total} pages.')
+		license_pages_total, licenses_found = license_query_page_count(licensetype)
+		print(f'Retrieved page 1 of {license_pages_total} pages of {licensetype}.')
 		if license_pages_total > 0:
-			if TESTMODE:
-				license_pages_total = 1
-			for n in range(1, license_pages_total + 1):
-				print(f'Retrieving page {n} of {licensetype}.')
-				licenses_found_json = license_query(licensetype, n)
-				if 'Result' in licenses_found_json and 'EntityResults' in licenses_found_json['Result']:
-					licenses.extend(licenses_found_json['Result']['EntityResults'])
+			licenses.extend(licenses_found)
+			if not TESTMODE:
+				for n in range(2, license_pages_total + 1):
+					licenses_found = license_query(licensetype, n)
+					print(f'Retrieved page {n} of {license_pages_total} pages of {licensetype}.')
+					licenses.extend(licenses_found)
 		if TESTMODE:
 			break
-	df = pd.DataFrame.from_dict(licenses)
-	return df
+	return pd.DataFrame(data=licenses)
 
 # Get all licenses
 df = license_compiler()
