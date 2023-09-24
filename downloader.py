@@ -716,12 +716,12 @@ def license_compiler():
 		license_pages_current = 1
 		print(f'Processing {licensetype} licenses.')
 		license_pages_total = license_query_page_count(licensetype)
-		print(f'Found {str(license_pages_total)} pages.')
+		print(f'Found {license_pages_total} pages.')
 		if license_pages_total > 0:
 			if TESTMODE:
 				license_pages_total = 1
 			for n in range(license_pages_current, license_pages_total + 1):
-				print(f'Retrieving page {str(license_pages_current)} of {licensetype}.')
+				print(f'Retrieving page {license_pages_current} of {licensetype}.')
 				licenses_found_json = license_query(licensetype, license_pages_current)
 				if 'Result' in licenses_found_json:
 					if 'EntityResults' in licenses_found_json['Result']:
