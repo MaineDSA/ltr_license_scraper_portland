@@ -613,22 +613,17 @@ def license_compiler():
 
 	licenses = []
 	for licensetype in licensetypes:
-		license_pages_total = 0
-		license_pages_current = 1
 		print(f'Processing {licensetype} licenses.')
 		license_pages_total = license_query_page_count(licensetype)
 		print(f'Found {license_pages_total} pages.')
 		if license_pages_total > 0:
 			if TESTMODE:
 				license_pages_total = 1
-			for n in range(license_pages_current, license_pages_total + 1):
-				print(f'Retrieving page {license_pages_current} of {licensetype}.')
-				licenses_found_json = license_query(licensetype, license_pages_current)
-				if 'Result' in licenses_found_json:
-					if 'EntityResults' in licenses_found_json['Result']:
-						for license_found in licenses_found_json['Result']['EntityResults']:
-							licenses.append(license_found)
-				license_pages_current = license_pages_current + 1
+			for n in range(1, license_pages_total + 1):
+				print(f'Retrieving page {n} of {licensetype}.')
+				licenses_found_json = license_query(licensetype, n)
+				if 'Result' in licenses_found_json and 'EntityResults' in licenses_found_json['Result']:
+					licenses.extend(licenses_found_json['Result']['EntityResults'])
 		if TESTMODE:
 			break
 	df = pd.DataFrame.from_dict(licenses)
