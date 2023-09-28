@@ -36,7 +36,7 @@ def license_details(license: str):
 			unit['Column0']['Value']: {
 				get_label(unit[column]): unit[column]['Value']
 				for column in unit
-				if search("^Column", column) and unit[column]
+				if column.startswith("Column") and unit[column]
 			}
 			for unit in licensedata['CustomFieldTableRows']
 		}
