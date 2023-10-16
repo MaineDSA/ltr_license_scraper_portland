@@ -8,25 +8,24 @@ As written, the script downloads a list of all Long-Term Rental licenses issued 
 
 ## Prerequisites
 
-To run this program, you need to have Python 3 installed on your computer. You can download and install Python 3 from the official Python website: [https://www.python.org](https://www.python.org)
+To run this code, you'll need to have Python 3.9, 3.10, or 3.11 installed on your machine. You'll also need to install the required packages by running the following command from inside the project folder:
 
-You also need to install the following Python libraries:
-
-- `requests`
-- `pandas`
-
-You can install these libraries using `pip` by running the following command in your terminal or command prompt:
-
-```
-pip install requests pandas
+```shell
+python3 -m pip install -r requirements.txt
 ```
 
 ## Usage
 
-1. Download the Python script provided and save it to a directory on your computer.
+1. Clone the repository and navigate to the project folder.
+2. Open a terminal and run the following command to create a CSV of licenses:
 
-2. Open the script in a text editor and modify the following variables if needed:
+```shell
+python3 -m license_downloader
+```
 
-   - `TESTMODE`: Set this to `True` if you want to test the program with small number of licenses (1 page of 20 licenses -- only iterating through Multi Family licenses). Set it to `False` if you want to download all Long Term Rental licenses.
+## Notes
+The code contains two variables for easy testing and adjustment for usecase:
 
-   - `PAGESIZE`: Set this to the desired number of licenses per page
+- `TESTMODE`: Set this to `True` if you want to test the program with small number of licenses (1 page of 20 licenses -- only iterating through Multi Family licenses). Set it to `False` if you want to download all Long Term Rental licenses.
+
+- `PAGESIZE`: Set this to the desired number of licenses per page
