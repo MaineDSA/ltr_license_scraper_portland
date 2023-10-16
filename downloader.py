@@ -40,8 +40,6 @@ def license_details(ltr_license: str) -> dict:
         """Find an return the value of each data field in a license"""
         if licensedata["CustomFieldTableRows"] is None:
             return licensedata["Value"]
-        elif licensedata["CustomFieldTableRows"] == []:
-            return {}
 
         return {
             unit["Column0"]["Value"]: {
