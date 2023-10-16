@@ -1,3 +1,5 @@
+[![Pylint](https://github.com/MaineDSA/PortlandLTRData/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/MaineDSA/PortlandLTRData/actions/workflows/pylint.yml)
+
 # Landlord License Data Downloader
 
 This Python program allows you to download data about landlord licenses from the City of Portland website. It uses the `requests` library to send HTTP requests to the website's API and the `pandas` library to organize the data. It saves the results to a csv file.
