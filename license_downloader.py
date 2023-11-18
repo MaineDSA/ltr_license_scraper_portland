@@ -1,7 +1,8 @@
 """Download data about landlord licenses from the City of Portland website and save into a CSV"""
 
-from requests import Session
 from time import sleep
+from requests import Session
+from tqdm import tqdm
 import pandas as pd
 
 TESTMODE = False
@@ -58,7 +59,7 @@ def license_details(ltr_license: str) -> dict:
         "OnlineLayoutId": "e7d5dda1-27cb-4d0d-8128-58e979697587",
     }
 
-    print(f"Getting ltr_license details for {ltr_license}.")
+    # print(f"Getting ltr_license details for {ltr_license}.")
     response_json = s.post(LICENSE_URL, headers=headers, json=payload).json()["Result"][
         "CustomGroups"
     ][0]["CustomFields"]
@@ -372,7 +373,12 @@ def license_compiler() -> pd.DataFrame:
 # Get all licenses
 with Session() as s:
     df = license_compiler()
+
+    # Create new `pandas` methods which use `tqdm` progress
+    # (can use tqdm_gui, optional kwargs, etc.)
+    tqdm.pandas()
+
     # Add detail from individual license pages
-    df["businessLicense"] = df["CaseId"].apply(license_details)
+    df["businessLicense"] = df["CaseId"].progress_apply(license_details)
     # Write it to CSV
     df.to_csv(r"./saved.csv", encoding="utf-8", index=False)
