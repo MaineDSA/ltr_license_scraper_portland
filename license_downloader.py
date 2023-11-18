@@ -1,6 +1,7 @@
 """Download data about landlord licenses from the City of Portland website and save into a CSV"""
 
 from requests import Session
+from time import sleep
 import pandas as pd
 
 TESTMODE = False
@@ -62,6 +63,7 @@ def license_details(ltr_license: str) -> dict:
         "CustomGroups"
     ][0]["CustomFields"]
 
+    sleep(0.5)
     return {
         get_label(licensedata): get_value(licensedata) for licensedata in response_json
     }
