@@ -376,7 +376,7 @@ with Session() as s:
 
     # Create new `pandas` methods which use `tqdm` progress
     # (can use tqdm_gui, optional kwargs, etc.)
-    tqdm.pandas()
+    tqdm.pandas(unit='licenses')
 
     # Add detail from individual license pages
     df["businessLicense"] = df["CaseId"].progress_apply(license_details)
