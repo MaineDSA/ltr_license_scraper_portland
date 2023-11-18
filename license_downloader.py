@@ -70,7 +70,7 @@ def license_details(ltr_license: str) -> dict:
 def license_compiler() -> pd.DataFrame:
     """Create and return a dataframe containing a list of all licenses"""
 
-    def license_query(licensetype: str, page_num: int) -> (list, int):
+    def license_query(licensetype: str, page_num: int) -> (int, list):
         """Query and return a total page count and the requested page of results"""
 
         payload = {
