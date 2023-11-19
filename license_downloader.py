@@ -357,16 +357,18 @@ def license_compiler() -> pd.DataFrame:
     licenses = []
     for licensetype in licensetypes:
         license_pages_total, licenses_found = license_query(licensetype, 1)
-        print(f"Retrieved page 1 of {license_pages_total} pages of {licensetype}.")
         licenses.extend(licenses_found)
-        if TESTMODE:  # 1 page is enough when testing
+
+        if TESTMODE:  # 1 page is generally enough when testing
+            print(f"Retrieving page 1 of {license_pages_total} of {licensetype}.")
             break
-        for n in range(2, license_pages_total + 1):
+
+        print(f"Retrieving all {license_pages_total} pages of {licensetype}.")
+        pagenumbers = range(2, license_pages_total + 1)
+        for n in tqdm(pagenumbers, unit='page', initial=1, total=len(pagenumbers)+1):
             license_pages_total, licenses_found = license_query(licensetype, n)
-            print(
-                f"Retrieved page {n} of {license_pages_total} pages of {licensetype}."
-            )
             licenses.extend(licenses_found)
+
     return pd.DataFrame(data=licenses)
 
 
@@ -379,6 +381,7 @@ with Session() as s:
     tqdm.pandas(unit='licenses')
 
     # Add detail from individual license pages
+    print(f"Downloading license details for all {len(df['CaseId'])} licenses.")
     df["businessLicense"] = df["CaseId"].progress_apply(license_details)
     # Write it to CSV
     df.to_csv(r"./saved.csv", encoding="utf-8", index=False)
