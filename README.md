@@ -10,7 +10,7 @@ As written, the script downloads a list of all Long-Term Rental licenses issued 
 
 ## Prerequisites
 
-To run this code, you'll need to have Python 3.9, 3.10, or 3.11 installed on your machine. You'll also need to install the required packages by running the following command from inside the project folder:
+To run this code, you'll need to have Python 3.9, 3.10, 3.11, or 3.12 installed on your machine. You'll also need to install the required packages by running the following command from inside the project folder:
 
 ```shell
 python3 -m pip install -r requirements.txt
