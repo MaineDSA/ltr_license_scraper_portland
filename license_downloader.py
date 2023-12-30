@@ -30,13 +30,7 @@ def license_details(ltr_license: str) -> dict:
 
     def get_label(data: dict) -> str:
         """Find an return the most human-readable field name available"""
-        return (
-            data["Label"]
-            or data["FieldName"]
-            or data["CustomField"]
-            or str(data["Id"])
-            or ""
-        )
+        return data["Label"] or data["FieldName"] or data["CustomField"] or str(data["Id"]) or ""
 
     def get_value(licensedata: dict) -> dict:
         """Find an return the value of each data field in a license"""
@@ -44,11 +38,7 @@ def license_details(ltr_license: str) -> dict:
             return licensedata["Value"]
 
         return {
-            unit["Column0"]["Value"]: {
-                get_label(unit[column]): unit[column]["Value"]
-                for column in unit
-                if column.startswith("Column") and unit[column]
-            }
+            unit["Column0"]["Value"]: {get_label(unit[column]): unit[column]["Value"] for column in unit if column.startswith("Column") and unit[column]}
             for unit in licensedata["CustomFieldTableRows"]
         }
 
@@ -60,14 +50,10 @@ def license_details(ltr_license: str) -> dict:
     }
 
     # print(f"Getting ltr_license details for {ltr_license}.")
-    response_json = s.post(LICENSE_URL, headers=headers, json=payload).json()["Result"][
-        "CustomGroups"
-    ][0]["CustomFields"]
+    response_json = s.post(LICENSE_URL, headers=headers, json=payload).json()["Result"]["CustomGroups"][0]["CustomFields"]
 
     sleep(0.5)
-    return {
-        get_label(licensedata): get_value(licensedata) for licensedata in response_json
-    }
+    return {get_label(licensedata): get_value(licensedata) for licensedata in response_json}
 
 
 def license_compiler() -> pd.DataFrame:
@@ -349,9 +335,7 @@ def license_compiler() -> pd.DataFrame:
             "SortBy": "relevance",
             "SortAscending": True,
         }
-        result = (
-            s.post(QUERY_URL, headers=headers, json=payload).json().get("Result", {})
-        )
+        result = s.post(QUERY_URL, headers=headers, json=payload).json().get("Result", {})
         return result.get("TotalPages", 0), result.get("EntityResults", [])
 
     licenses = []
@@ -365,7 +349,7 @@ def license_compiler() -> pd.DataFrame:
 
         print(f"Retrieving all {license_pages_total} pages of {licensetype}.")
         pagenumbers = range(2, license_pages_total + 1)
-        for n in tqdm(pagenumbers, unit='page', initial=1, total=len(pagenumbers)+1):
+        for n in tqdm(pagenumbers, unit="page", initial=1, total=len(pagenumbers) + 1):
             license_pages_total, licenses_found = license_query(licensetype, n)
             licenses.extend(licenses_found)
 
@@ -378,7 +362,7 @@ with Session() as s:
 
     # Create new `pandas` methods which use `tqdm` progress
     # (can use tqdm_gui, optional kwargs, etc.)
-    tqdm.pandas(unit='licenses')
+    tqdm.pandas(unit="licenses")
 
     # Add detail from individual license pages
     print(f"Downloading license details for all {len(df['CaseId'])} licenses.")
