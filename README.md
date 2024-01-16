@@ -1,4 +1,4 @@
-[![Pylint](https://github.com/MaineDSA/PortlandLTRData/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/MaineDSA/PortlandLTRData/actions/workflows/pylint.yml)
+[![Ruff](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/lint-python.yml/badge.svg)](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/lint-python.yml)
 
 # Long Term Rental License Downloader for Portland, ME
 
