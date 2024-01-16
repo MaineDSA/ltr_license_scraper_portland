@@ -22,5 +22,6 @@ dependencies = [
 
 [project.optional-dependencies]
 github-actions = [
+    "ruff==0.1.13",
     "ydiff==1.2"
 ]
