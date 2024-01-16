@@ -1,4 +1,4 @@
-[![Ruff](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/lint-python.yml/badge.svg)](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/lint-python.yml)
+[![Ruff](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/lint-python.yml/badge.svg)](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/lint-python.yml) [![CodeQL](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/MaineDSA/ltr_license_scraper_portland/actions/workflows/github-code-scanning/codeql)
 
 # Long Term Rental License Downloader for Portland, ME
 
