@@ -1,21 +1,22 @@
 """Download data about landlord licenses from the City of Portland website and save into a CSV"""
 
 from time import sleep
+
+import pandas as pd
 from requests import Session
 from tqdm import tqdm
-import pandas as pd
 
 TESTMODE = False
 PAGESIZE = 200
 if TESTMODE:  # Faster to test with 20
     PAGESIZE = 20
 
-LICENSE_TYPES = {
+licensetypes = {
     "Multi Family": "ddf09feb-ce7d-4437-839d-33296fd1c849_c7f4be57-4935-461c-bcf1-8d89c7973b81",
     "Single Family": "ddf09feb-ce7d-4437-839d-33296fd1c849_5c7dadf7-db4e-4d4d-a1fa-c109dbf3c0c5",
     "Two Family": "ddf09feb-ce7d-4437-839d-33296fd1c849_0b3794bb-b86f-467c-b6c0-6d473a8c6966",
 }
-HEADERS = {
+headers = {
     "tenantId": "1",
     "tenantName": "EnerGovProd",
     "Referer": "https://selfservice.portlandmaine.gov/energov_prod/selfservice",
@@ -50,7 +51,7 @@ def license_details(ltr_license: str) -> dict:
     }
 
     # print(f"Getting ltr_license details for {ltr_license}.")
-    response_json = s.post(LICENSE_URL, headers=HEADERS, json=payload).json()["Result"]["CustomGroups"][0]["CustomFields"]
+    response_json = s.post(LICENSE_URL, headers=headers, json=payload).json()["Result"]["CustomGroups"][0]["CustomFields"]
 
     sleep(0.5)
     return {get_label(licensedata): get_value(licensedata) for licensedata in response_json}
@@ -59,7 +60,7 @@ def license_details(ltr_license: str) -> dict:
 def license_compiler() -> pd.DataFrame:
     """Create and return a dataframe containing a list of all licenses"""
 
-    def license_query(l_type: str, page_num: int) -> (int, list):
+    def license_query(licensetype: str, page_num: int) -> (int, list):
         """Query and return a total page count and the requested page of results"""
 
         payload = {
@@ -255,7 +256,7 @@ def license_compiler() -> pd.DataFrame:
             },
             "LicenseCriteria": {
                 "LicenseNumber": None,
-                "LicenseTypeId": LICENSE_TYPES[l_type],
+                "LicenseTypeId": licensetypes[licensetype],
                 "LicenseClassId": "none",
                 "LicenseStatusId": "none",
                 "BusinessStatusId": "none",
@@ -335,11 +336,11 @@ def license_compiler() -> pd.DataFrame:
             "SortBy": "relevance",
             "SortAscending": True,
         }
-        result = s.post(QUERY_URL, headers=HEADERS, json=payload).json().get("Result", {})
+        result = s.post(QUERY_URL, headers=headers, json=payload).json().get("Result", {})
         return result.get("TotalPages", 0), result.get("EntityResults", [])
 
     licenses = []
-    for licensetype in LICENSE_TYPES:
+    for licensetype in licensetypes:
         license_pages_total, licenses_found = license_query(licensetype, 1)
         licenses.extend(licenses_found)
 
