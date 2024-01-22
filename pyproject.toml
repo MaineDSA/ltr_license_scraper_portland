@@ -15,7 +15,7 @@ license = { "file" = "LICENSE" }
 authors = [{ "name" = "bmos", "email" = "wil.t.dsa@pm.me" }]
 urls = { "GitHub" = "https://github.com/MaineDSA/ltr_license_scraper_portland" }
 dependencies = [
-    "pandas==2.1.4",
+    "pandas==2.2.0",
     "requests==2.31.0",
     "tqdm==4.66.1",
 ]
