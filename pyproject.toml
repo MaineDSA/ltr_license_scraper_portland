@@ -27,5 +27,5 @@ dev = [
 ]
 github-actions = [
     "ruff==0.3.4",
-    "ydiff==1.2"
+    "ydiff==1.3"
 ]
