@@ -1,6 +1,7 @@
 """Download data about landlord licenses from the City of Portland website and save into a CSV"""
 
 from time import sleep
+from typing import Tuple
 
 import pandas as pd
 from requests import Session
@@ -57,7 +58,7 @@ def license_details(ltr_license: str) -> dict:
     return {get_label(licensedata): get_value(licensedata) for licensedata in response_json}
 
 
-def license_query(licensetype: str, page_num: int) -> (int, list):
+def license_query(licensetype: str, page_num: int) -> Tuple[int, list]:
     """Query and return a total page count and the requested page of results"""
     payload = {
         "Keyword": "",
