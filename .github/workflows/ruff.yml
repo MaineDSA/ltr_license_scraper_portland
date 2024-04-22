@@ -42,4 +42,4 @@ jobs:
           
       - name: Linting the code with ruff
         run: |
-          ruff check $(git ls-files '*.py') --diff | ydiff -s
+          ruff check src/
