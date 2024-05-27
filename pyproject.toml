@@ -16,7 +16,7 @@ authors = [{ "name" = "bmos", "email" = "wil.t.dsa@pm.me" }]
 urls = { "GitHub" = "https://github.com/MaineDSA/ltr_license_scraper_portland" }
 dependencies = [
     "pandas==2.2.2",
-    "requests==2.32.0",
+    "requests==2.32.2",
     "tqdm==4.66.4",
 ]
 
