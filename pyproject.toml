@@ -25,11 +25,11 @@ dev = [
     "mypy==1.11.1",
     "pandas-stubs==2.2.2.240807",
     "pre-commit==3.8.0",
-    "ruff==0.5.7",
+    "ruff==0.6.1",
     "types-requests==2.32.0.20240712",
     "types-tqdm==4.66.0.20240417"
 ]
 github-actions = [
-    "ruff==0.5.7",
+    "ruff==0.6.1",
     "ydiff==1.3"
 ]
