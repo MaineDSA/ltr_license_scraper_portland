@@ -24,7 +24,7 @@ dependencies = [
 dev = [
     "mypy==1.11.2",
     "pandas-stubs==2.2.2.240909",
-    "pre-commit==3.8.0",
+    "pre-commit==4.0.0",
     "ruff==0.6.9",
     "types-requests==2.32.0.20240914",
     "types-tqdm==4.66.0.20240417"
