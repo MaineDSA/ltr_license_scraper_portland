@@ -26,7 +26,7 @@ dev = [
     "pandas-stubs==2.2.3.250308",
     "pre-commit==4.1.0",
     "ruff==0.9.10",
-    "types-requests==2.32.0.20250301",
+    "types-requests==2.32.0.20250306",
     "types-tqdm==4.67.0.20250301"
 ]
 github-actions = [
