@@ -1,11 +1,13 @@
-"""Download data about landlord licenses from the City of Portland website and save into a CSV"""
+"""Download data about landlord licenses from the City of Portland website and save into a CSV."""
 
+import logging
 from time import sleep
-from typing import Tuple
 
 import pandas as pd
 from requests import Session
 from tqdm import tqdm
+
+logger = logging.getLogger(__name__)
 
 TESTMODE = False
 PAGESIZE = 200
@@ -28,12 +30,12 @@ QUERY_URL = "https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/
 
 
 def get_label(data: dict) -> str:
-    """Find an return the most human-readable field name available"""
+    """Find an return the most human-readable field name available."""
     return data["Label"] or data["FieldName"] or data["CustomField"] or str(data["Id"]) or ""
 
 
 def get_value(data: dict) -> dict:
-    """Find an return the value of each data field in a license"""
+    """Find an return the value of each data field in a license."""
     if data["CustomFieldTableRows"] is None:
         return data["Value"]
     return {
@@ -43,7 +45,7 @@ def get_value(data: dict) -> dict:
 
 
 def license_details(ltr_license: str) -> dict:
-    """Create and return a dict containing formatted license info for requested license"""
+    """Create and return a dict containing formatted license info for requested license."""
     payload = {
         "EntityId": ltr_license,
         "ModuleId": 8,
@@ -58,8 +60,8 @@ def license_details(ltr_license: str) -> dict:
     return {get_label(licensedata): get_value(licensedata) for licensedata in response_json}
 
 
-def license_query(licensetype: str, page_num: int) -> Tuple[int, list]:
-    """Query and return a total page count and the requested page of results"""
+def license_query(licensetype: str, page_num: int) -> tuple[int, list]:
+    """Query and return a total page count and the requested page of results."""
     payload = {
         "Keyword": "",
         "ExactMatch": True,
@@ -338,18 +340,17 @@ def license_query(licensetype: str, page_num: int) -> Tuple[int, list]:
 
 
 def license_compiler() -> pd.DataFrame:
-    """Create and return a dataframe containing a list of all licenses"""
-
+    """Create and return a dataframe containing a list of all licenses."""
     licenses = []
     for licensetype in LICENSE_TYPES:
         license_pages_total, licenses_found = license_query(licensetype, 1)
         licenses.extend(licenses_found)
 
         if TESTMODE:  # 1 page is generally enough when testing
-            print(f"Retrieving page 1 of {license_pages_total} of {licensetype}.")
+            logger.info("Retrieving page 1 of %s of %s.", license_pages_total, licensetype)
             break
 
-        print(f"Retrieving all {license_pages_total} pages of {licensetype}.")
+        logger.info("Retrieving all %s pages of %s.", license_pages_total, licensetype)
         pagenumbers = range(2, license_pages_total + 1)
         for n in tqdm(pagenumbers, unit="page", initial=1, total=len(pagenumbers) + 1):
             license_pages_total, licenses_found = license_query(licensetype, n)
@@ -367,7 +368,7 @@ with Session() as s:
     tqdm.pandas(unit="licenses")
 
     # Add detail from individual license pages
-    print(f"Downloading license details for all {len(df['CaseId'])} licenses.")
+    logger.info("Downloading license details for all %s licenses.", len(df["CaseId"]))
     df["businessLicense"] = df["CaseId"].progress_apply(license_details)
     # Write it to CSV
     df.to_csv(r"./saved.csv", encoding="utf-8", index=False)
