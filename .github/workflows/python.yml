@@ -20,7 +20,7 @@ jobs:
 
         steps:
             - name: Harden runner
-              uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49
+              uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911
               with:
                   disable-sudo: true
                   egress-policy: block
@@ -38,7 +38,7 @@ jobs:
                   cache: pip
 
             - name: Install uv
-              uses: install-pinned/uv@51bb057ca8857db7531f188d414ba32b7bb16d2b
+              uses: install-pinned/uv@5b0ba1b2949207d1c7220019a44eb4e08bc0045d
 
             - name: Install module and dependencies
               run: |
@@ -64,7 +64,7 @@ jobs:
 
         steps:
             - name: Harden runner
-              uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49
+              uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911
               with:
                   disable-sudo: true
                   egress-policy: block
@@ -83,7 +83,7 @@ jobs:
                   cache: pip
 
             - name: Install uv
-              uses: install-pinned/uv@51bb057ca8857db7531f188d414ba32b7bb16d2b
+              uses: install-pinned/uv@5b0ba1b2949207d1c7220019a44eb4e08bc0045d
 
             - name: Install module and dependencies
               run: |
@@ -102,7 +102,7 @@ jobs:
 
             - name: Upload SARIF file to code scanning
               if: ( success() || failure() ) && contains('["success", "failure"]', steps.run-ruff-sarif.outcome)
-              uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b
+              uses: github/codeql-action/upload-sarif@51f77329afa6477de8c49fc9c7046c15b9a4e79d
               with:
                   sarif_file: results.sarif
 
@@ -120,7 +120,7 @@ jobs:
 
         steps:
             - name: Harden runner
-              uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49
+              uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911
               with:
                   disable-sudo: true
                   egress-policy: block
@@ -139,7 +139,7 @@ jobs:
                   cache: pip
 
             - name: Install uv
-              uses: install-pinned/uv@51bb057ca8857db7531f188d414ba32b7bb16d2b
+              uses: install-pinned/uv@5b0ba1b2949207d1c7220019a44eb4e08bc0045d
 
             - name: Install module and dependencies
               run: |
@@ -150,7 +150,7 @@ jobs:
                   bandit --confidence-level=high --severity-level=high --configfile 'pyproject.toml' --format sarif --output results.sarif --recursive .
 
             - name: Upload SARIF file to code scanning
-              uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b
+              uses: github/codeql-action/upload-sarif@51f77329afa6477de8c49fc9c7046c15b9a4e79d
               with:
                   sarif_file: results.sarif
 
@@ -159,7 +159,7 @@ jobs:
 
         steps:
             - name: Harden runner
-              uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49
+              uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911
               with:
                   disable-sudo: true
                   egress-policy: block
@@ -177,7 +177,7 @@ jobs:
                   cache: pip
 
             - name: Install uv
-              uses: install-pinned/uv@51bb057ca8857db7531f188d414ba32b7bb16d2b
+              uses: install-pinned/uv@5b0ba1b2949207d1c7220019a44eb4e08bc0045d
 
             - name: Install module and dependencies
               run: |
@@ -206,7 +206,7 @@ jobs:
 
         steps:
             - name: Harden runner
-              uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49
+              uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911
               with:
                   disable-sudo: true
                   egress-policy: block
@@ -225,7 +225,7 @@ jobs:
                   cache: pip
 
             - name: Install uv
-              uses: install-pinned/uv@51bb057ca8857db7531f188d414ba32b7bb16d2b
+              uses: install-pinned/uv@5b0ba1b2949207d1c7220019a44eb4e08bc0045d
 
             - name: Install module and dependencies
               run: |
