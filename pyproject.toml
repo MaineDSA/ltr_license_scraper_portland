@@ -20,7 +20,7 @@ dev = [
     "pre-commit==4.3.0",
     "ruff==0.11.12",
     "types-requests==2.32.4.20250913",
-    "types-tqdm==4.67.0.20250516"
+    "types-tqdm==4.67.0.20250809"
 ]
 
 [tool.ruff]
