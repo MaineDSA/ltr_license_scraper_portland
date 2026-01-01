@@ -5,6 +5,7 @@ This script queries the Portland self-service API to retrieve landlord licenses
 (Multi-Family, Single-Family, and Two-Family) issued since 2022-01-01.
 """
 
+import argparse
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -26,10 +27,14 @@ class Config:
     """Configuration settings for the scraper."""
 
     test_mode: bool = False
-    page_size: int = 20 if test_mode else 200
     rate_limit_delay: float = 2.5
     output_file: Path = Path("./saved.csv")
     issue_date_from: str = "2022-01-01T05:00:00.000Z"
+
+    @property
+    def page_size(self) -> int:
+        """Return page size based on test mode."""
+        return 20 if self.test_mode else 200
 
 
 @dataclass
@@ -182,9 +187,44 @@ class LicenseScraper:
         return df
 
 
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Download landlord license data from the City of Portland website.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    parser.add_argument(
+        "--test",
+        action="store_true",
+        help="Run in test mode (only fetch first page of each license type)",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=Path("./saved.csv"),
+        help="Output CSV file path",
+    )
+    parser.add_argument(
+        "--issue-date-from",
+        type=str,
+        default="2022-01-01T05:00:00.000Z",
+        help="Filter licenses issued from this date (ISO 8601 format)",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
     """Download license data and save to CSV."""
-    config = Config()
+    args = parse_args()
+
+    config = Config(
+        test_mode=args.test,
+        output_file=args.output,
+        issue_date_from=args.issue_date_from,
+    )
+
+    logger.info("Starting scraper in %s mode", "TEST" if config.test_mode else "FULL")
+    logger.info("Output file: %s", config.output_file)
 
     with Session() as session:
         scraper = LicenseScraper(session, config)
