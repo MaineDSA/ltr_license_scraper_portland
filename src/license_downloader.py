@@ -154,7 +154,7 @@ class LicenseScraper:
 
             if self.config.test_mode:
                 logger.info("Test mode: Retrieved page 1 of %s for %s", total_pages, license_type.display_name)
-                break
+                continue
 
             logger.info("Retrieving all %s pages of %s", total_pages, license_type.display_name)
 
