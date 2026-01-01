@@ -24,7 +24,18 @@ dev = [
     "types-tqdm~=4.67.0.20250809"
 ]
 
+[project.scripts]
+ltr_license_scraper_portland = "src.license_downloader:main"
+
+[build-system]
+requires = ["setuptools>=80.0"]
+build-backend = "setuptools.build_meta"
+
 [tool]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
 
 [tool.ruff]
 line-length = 160
