@@ -22,6 +22,10 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
+# Default date filter
+DEFAULT_ISSUE_DATE = "2022-01-01T05:00:00.000Z"
+
+
 @dataclass
 class Config:
     """Configuration settings for the scraper."""
@@ -29,7 +33,7 @@ class Config:
     test_mode: bool = False
     rate_limit_delay: float = 2.5
     output_file: Path = Path("./saved.csv")
-    issue_date_from: str = "2022-01-01T05:00:00.000Z"
+    issue_date_from: str = DEFAULT_ISSUE_DATE
 
     @property
     def page_size(self) -> int:
@@ -207,7 +211,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--issue-date-from",
         type=str,
-        default="2022-01-01T05:00:00.000Z",
+        default=DEFAULT_ISSUE_DATE,
         help="Filter licenses issued from this date (ISO 8601 format)",
     )
     return parser.parse_args()
