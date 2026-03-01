@@ -21,7 +21,7 @@ dev = [
     "ruff==0.14.7",
     "ssort==0.15.0",
     "types-requests~=2.32.4.20250913",
-    "types-tqdm~=4.67.0.20250809"
+    "types-tqdm~=4.67.3.20260205"
 ]
 
 [project.scripts]
