@@ -1,6 +1,6 @@
 [project]
 name = "ltr_license_scraper_portland_maine"
-version = "1.1.0"
+version = "1.0.1"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { "file" = "LICENSE" }
@@ -12,24 +12,36 @@ dependencies = [
     "tqdm~=4.67.1",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "bandit[sarif]==1.9.2",
-    "mypy~=1.19.1",
-    "pandas-stubs~=2.3.3.251219",
-    "pre-commit~=4.5.0",
-    "ruff==0.14.7",
-    "ssort==0.15.0",
-    "types-requests~=2.32.4.20250913",
-    "types-tqdm~=4.67.3.20260205"
-]
-
 [project.scripts]
 ltr_license_scraper_portland = "src.license_downloader:main"
 
 [build-system]
 requires = ["setuptools>=80.0"]
 build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    {include-group = "lint"},
+    {include-group = "pre-commit"},
+    {include-group = "security"},
+    {include-group = "types"},
+]
+lint = [
+    "ruff==0.14.7",
+    "ssort==0.15.0",
+]
+pre-commit = [
+    "pre-commit~=4.5.0",
+]
+security = [
+    "bandit[sarif]==1.9.2",
+]
+types = [
+    "mypy~=1.19.1",
+    "pandas-stubs~=2.3.3.251219",
+    "types-requests~=2.32.4.20250913",
+    "types-tqdm~=4.67.3.20260205"
+]
 
 [tool]
 
