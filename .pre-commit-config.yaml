@@ -14,6 +14,10 @@ repos:
           - id: debug-statements
           - id: requirements-txt-fixer
           - id: mixed-line-ending
+    - repo: https://github.com/bwhmather/ssort
+      rev: 0.16.0
+      hooks:
+          - id: ssort
     - repo: https://github.com/astral-sh/ruff-pre-commit
       rev: v0.14.7
       hooks:
