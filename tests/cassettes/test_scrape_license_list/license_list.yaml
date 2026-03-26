@@ -1,0 +1,818 @@
+interactions:
+- request:
+    body: '{"Keyword": "", "ExactMatch": true, "SearchModule": 10, "FilterModule":
+      1, "SearchMainAddress": false, "PlanCriteria": {"PlanNumber": null, "PlanTypeId":
+      null, "PlanWorkclassId": null, "PlanStatusId": null, "ProjectName": null, "ApplyDateFrom":
+      null, "ApplyDateTo": null, "ExpireDateFrom": null, "ExpireDateTo": null, "CompleteDateFrom":
+      null, "CompleteDateTo": null, "Address": null, "Description": null, "SearchMainAddress":
+      false, "ContactId": null, "ParcelNumber": null, "TypeId": null, "WorkClassIds":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "PermitCriteria":
+      {"PermitNumber": null, "PermitTypeId": null, "PermitWorkclassId": null, "PermitStatusId":
+      null, "ProjectName": null, "IssueDateFrom": null, "IssueDateTo": null, "Address":
+      null, "Description": null, "ExpireDateFrom": null, "ExpireDateTo": null, "FinalDateFrom":
+      null, "FinalDateTo": null, "ApplyDateFrom": null, "ApplyDateTo": null, "SearchMainAddress":
+      false, "ContactId": null, "TypeId": null, "WorkClassIds": null, "ParcelNumber":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "InspectionCriteria":
+      {"Keyword": null, "ExactMatch": false, "Complete": null, "InspectionNumber":
+      null, "InspectionTypeId": null, "InspectionStatusId": null, "RequestDateFrom":
+      null, "RequestDateTo": null, "ScheduleDateFrom": null, "ScheduleDateTo": null,
+      "Address": null, "SearchMainAddress": false, "ContactId": null, "TypeId": [],
+      "WorkClassIds": [], "ParcelNumber": null, "DisplayCodeInspections": false, "ExcludeCases":
+      [], "ExcludeFilterModules": [], "HiddenInspectionTypeIDs": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "CodeCaseCriteria":
+      {"CodeCaseNumber": null, "CodeCaseTypeId": null, "CodeCaseStatusId": null, "ProjectName":
+      null, "OpenedDateFrom": null, "OpenedDateTo": null, "ClosedDateFrom": null,
+      "ClosedDateTo": null, "Address": null, "ParcelNumber": null, "Description":
+      null, "SearchMainAddress": false, "RequestId": null, "ExcludeCases": null, "ContactId":
+      null, "EnableDescriptionSearch": false, "PageNumber": 0, "PageSize": 0, "SortBy":
+      null, "SortAscending": false}, "RequestCriteria": {"RequestNumber": null, "RequestTypeId":
+      null, "RequestStatusId": null, "ProjectName": null, "EnteredDateFrom": null,
+      "EnteredDateTo": null, "DeadlineDateFrom": null, "DeadlineDateTo": null, "CompleteDateFrom":
+      null, "CompleteDateTo": null, "Address": null, "ParcelNumber": null, "SearchMainAddress":
+      false, "PageNumber": 0, "PageSize": 0, "SortBy": null, "SortAscending": false},
+      "BusinessLicenseCriteria": {"LicenseNumber": null, "LicenseTypeId": null, "LicenseClassId":
+      null, "LicenseStatusId": null, "BusinessStatusId": null, "LicenseYear": null,
+      "ApplicationDateFrom": null, "ApplicationDateTo": null, "IssueDateFrom": null,
+      "IssueDateTo": null, "ExpirationDateFrom": null, "ExpirationDateTo": null, "SearchMainAddress":
+      false, "CompanyTypeId": null, "CompanyName": null, "BusinessTypeId": null, "Description":
+      null, "CompanyOpenedDateFrom": null, "CompanyOpenedDateTo": null, "CompanyClosedDateFrom":
+      null, "CompanyClosedDateTo": null, "LastAuditDateFrom": null, "LastAuditDateTo":
+      null, "ParcelNumber": null, "Address": null, "TaxID": null, "DBA": null, "ExcludeCases":
+      null, "TypeId": null, "WorkClassIds": null, "ContactId": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "ProfessionalLicenseCriteria":
+      {"LicenseNumber": null, "HolderFirstName": null, "HolderMiddleName": null, "HolderLastName":
+      null, "HolderCompanyName": null, "LicenseTypeId": null, "LicenseClassId": null,
+      "LicenseStatusId": null, "IssueDateFrom": null, "IssueDateTo": null, "ExpirationDateFrom":
+      null, "ExpirationDateTo": null, "ApplicationDateFrom": null, "ApplicationDateTo":
+      null, "Address": null, "MainParcel": null, "SearchMainAddress": false, "ExcludeCases":
+      null, "TypeId": null, "WorkClassIds": null, "ContactId": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "LicenseCriteria":
+      {"LicenseNumber": null, "LicenseTypeId": "ddf09feb-ce7d-4437-839d-33296fd1c849_c7f4be57-4935-461c-bcf1-8d89c7973b81",
+      "LicenseClassId": "none", "LicenseStatusId": "none", "BusinessStatusId": "none",
+      "ApplicationDateFrom": null, "ApplicationDateTo": null, "IssueDateFrom": "2025-01-01",
+      "IssueDateTo": null, "ExpirationDateFrom": null, "ExpirationDateTo": null, "SearchMainAddress":
+      false, "CompanyTypeId": "none", "CompanyName": null, "BusinessTypeId": "none",
+      "Description": null, "CompanyOpenedDateFrom": null, "CompanyOpenedDateTo": null,
+      "CompanyClosedDateFrom": null, "CompanyClosedDateTo": null, "LastAuditDateFrom":
+      null, "LastAuditDateTo": null, "ParcelNumber": null, "Address": null, "TaxID":
+      null, "DBA": null, "ExcludeCases": null, "TypeId": null, "WorkClassIds": null,
+      "ContactId": null, "HolderFirstName": null, "HolderMiddleName": null, "HolderLastName":
+      null, "MainParcel": null, "EnableDescriptionSearchForBLicense": false, "EnableDescriptionSearchForPLicense":
+      false, "PageNumber": 1, "PageSize": 20, "SortBy": "relevance", "SortAscending":
+      false}, "ProjectCriteria": {"ProjectNumber": null, "ProjectName": null, "Address":
+      null, "ParcelNumber": null, "StartDateFrom": null, "StartDateTo": null, "ExpectedEndDateFrom":
+      null, "ExpectedEndDateTo": null, "CompleteDateFrom": null, "CompleteDateTo":
+      null, "Description": null, "SearchMainAddress": false, "ContactId": null, "TypeId":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "LicenseSortList":
+      [{"Key": "relevance", "Value": "Relevance"}, {"Key": "LicenseNumber.keyword",
+      "Value": "License Number"}, {"Key": "CompanyName.keyword", "Value": "Company
+      Name"}, {"Key": "AppliedDate", "Value": "Applied Date"}, {"Key": "MainAddress",
+      "Value": "Address"}], "ExcludeCases": null, "SortOrderList": [{"Key": true,
+      "Value": "Ascending"}, {"Key": false, "Value": "Descending"}], "HiddenInspectionTypeIDs":
+      null, "PageNumber": 0, "PageSize": 0, "SortBy": "relevance", "SortAscending":
+      true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6142'
+      Content-Type:
+      - application/json
+      DNT:
+      - '1'
+      Referer:
+      - https://selfservice.portlandmaine.gov/energov_prod/selfservice
+      User-Agent:
+      - python-requests/2.33.0
+      tenantId:
+      - '1'
+      tenantName:
+      - EnerGovProd
+    method: POST
+    uri: https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/search/search
+  response:
+    body:
+      string: '{"Result":{"EntityResults":[{"CaseId":"12463353-14cc-4c3b-b747-d02c5e6d3cd1","CaseNumber":"20182727","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-01-08T08:35:01","ApplyDate":"2024-12-31T15:28:39.773","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"24","AddressLine2":"HIGH
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"24
+        HIGH ST Portland ME"},"ModuleName":8,"AddressDisplay":"24 HIGH ST Portland
+        ME","MainParcel":"044  A002001","Description":"Housing Safety Registration","DBA":"TPO
+        PROPERTIES LLC  ","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-28T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"A08FE1B7-AFCE-4A2A-9E93-06CFE0544D61","BusinessStatus":"Active","Highlights":null},{"CaseId":"a0466c8a-971f-47d9-af7a-79ff21cbac4f","CaseNumber":"LTR-006187-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-04-09T23:00:03.057","ApplyDate":"2025-04-09T04:00:00","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"52","AddressLine2":"MONTREAL
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"52
+        MONTREAL ST Portland ME 04101"},"ModuleName":8,"AddressDisplay":"52 MONTREAL
+        ST Portland ME 04101","MainParcel":"015  F007001","Description":"","DBA":"50
+        Montreal St LLC","LicenseYear":null,"CompanyName":"50 Montreal St LLC","CompanyTypeName":"Limited
+        Liability Company","BusinessTypeName":"","TaxID":null,"OpenedDate":null,"ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"a2fbfde4-b96a-482e-8046-0c7e779b4a9b","BusinessStatus":"Active","Highlights":null},{"CaseId":"da46e82c-515c-452d-9120-01fb89f9e914","CaseNumber":"LTR-005991-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-02-27T23:00:01.897","ApplyDate":"2025-02-27T05:00:00","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"62","AddressLine2":"ROBERTS
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"62
+        ROBERTS ST Portland ME 04102"},"ModuleName":8,"AddressDisplay":"62 ROBERTS
+        ST Portland ME 04102","MainParcel":"066A F005001","Description":"","DBA":"62
+        & 64 ROBERTS STREET LLC","LicenseYear":null,"CompanyName":"62 & 64 ROBERTS
+        STREET LLC","CompanyTypeName":"Limited Liability Company","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-02-27T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"4da91baa-a05c-4f07-8be9-076e767bba69","BusinessStatus":"Active","Highlights":null},{"CaseId":"1bcbcae5-2607-4484-9655-d270b32a69c0","CaseNumber":"20180944","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T23:00:01.533","ApplyDate":"2025-12-15T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"5","AddressLine2":"DEERING
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"5
+        DEERING ST Portland ME"},"ModuleName":8,"AddressDisplay":"5 DEERING ST Portland
+        ME","MainParcel":"046  B025001","Description":"Housing Safety Registration","DBA":"Kevin
+        D''amboise","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-31T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"E9EF5BFF-6B4B-448E-99CD-26228D0A564C","BusinessStatus":"Active","Highlights":null},{"CaseId":"1dd760e3-b99d-40b2-8810-35b64edab080","CaseNumber":"LTR-003611-2021","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-14T23:00:02.193","ApplyDate":"2025-12-14T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"54","AddressLine2":"E
+        KIDDER ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"54
+        E KIDDER ST   Portland ME 04103"},"ModuleName":8,"AddressDisplay":"54 E KIDDER
+        ST Portland ME 04103","MainParcel":"163A F012001","Description":"","DBA":"ASHLEY
+        ELLIS & AARON ORTIZ","LicenseYear":null,"CompanyName":"","CompanyTypeName":"General
+        Partnership","BusinessTypeName":"","TaxID":null,"OpenedDate":"2021-09-03T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"904f5414-3964-4d18-8643-d7e33bf5db2e","BusinessStatus":"Active","Highlights":null},{"CaseId":"1e1ca7f6-e5b1-43c1-b271-7ac190b0c6c5","CaseNumber":"LTR-003780-2021","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:05.783","ApplyDate":"2025-12-16T08:26:03.067","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"760","AddressLine2":"CONGRESS
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"PORTLAND","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"760
+        CONGRESS ST PORTLAND ME 04102"},"ModuleName":8,"AddressDisplay":"760 CONGRESS
+        ST PORTLAND ME 04102","MainParcel":"054  F013001","Description":"","DBA":"MICHAEL
+        THYSSEN","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2021-10-26T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"5d8385b9-50eb-43ff-8a30-9383d58ebe4d","BusinessStatus":"Active","Highlights":null},{"CaseId":"1e29d506-b300-46d0-ad1d-c88ad4e99c02","CaseNumber":"20182110","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T10:31:51","ApplyDate":"2025-12-15T10:30:09.037","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"18","AddressLine2":"FAIRFIELD
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"18
+        FAIRFIELD ST Portland ME"},"ModuleName":8,"AddressDisplay":"18 FAIRFIELD ST
+        Portland ME","MainParcel":"432  B003001","Description":"Housing Safety Registration","DBA":"Paul
+        McCarthy","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-15T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"DEEB07BA-A52E-4935-B241-96CD82FC11B4","BusinessStatus":"Active","Highlights":null},{"CaseId":"1fd38c91-db24-47b5-a983-694020a15ad4","CaseNumber":"20183175","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T08:05:19","ApplyDate":"2025-11-25T09:15:57.873","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"151","AddressLine2":"NORTH
+        ST ","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"151
+        NORTH ST  Portland ME"},"ModuleName":8,"AddressDisplay":"151 NORTH ST Portland
+        ME","MainParcel":"015  A001001","Description":"Housing Safety Registration","DBA":"ISLAND
+        VIEW APARTMENTS  LIMITED PARTNERSHIP ","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-02-10T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"2CDA49AE-0E74-4769-8C55-A5B9A1C273A8","BusinessStatus":"Active","Highlights":null},{"CaseId":"2106001f-8fa1-4c2a-9081-42d7eb15f873","CaseNumber":"20180946","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T23:00:02.083","ApplyDate":"2025-12-15T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"52","AddressLine2":"CARLETON
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"52
+        CARLETON ST Portland ME"},"ModuleName":8,"AddressDisplay":"52 CARLETON ST
+        Portland ME","MainParcel":"063  D015001","Description":"Housing Safety Registration","DBA":"Kevin
+        D''amboise","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-31T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"E9EF5BFF-6B4B-448E-99CD-26228D0A564C","BusinessStatus":"Active","Highlights":null},{"CaseId":"222d1340-4e10-4c4e-a346-b0f93990cae4","CaseNumber":"LTR-005618-2023","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T23:00:02.523","ApplyDate":"2025-12-15T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"21","AddressLine2":"VERANDA
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"21
+        VERANDA ST Portland ME 04103"},"ModuleName":8,"AddressDisplay":"21 VERANDA
+        ST Portland ME 04103","MainParcel":"429  H014001","Description":"","DBA":"CHRISTOPHER
+        BRILEY","LicenseYear":null,"CompanyName":"CHRISTOPHER BRILEY","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2023-08-22T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"0fceba09-a710-41d5-9d01-9e5ffb3ef0bf","BusinessStatus":"Active","Highlights":null},{"CaseId":"223b9da8-f7f2-4a6e-bc2e-ddf067bf25f3","CaseNumber":"20185235","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T08:33:26","ApplyDate":"2025-12-15T08:31:01.91","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"24","AddressLine2":"DEERING
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"24
+        DEERING ST Portland ME"},"ModuleName":8,"AddressDisplay":"24 DEERING ST Portland
+        ME","MainParcel":"046  C004005","Description":"Housing Safety Registration","DBA":"Marc
+        W. Chadbourne: CHADBOURNE MARC W ","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2017-06-07T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"4BC89AA1-0980-49E8-94D0-4A2F6EFB9B7B","BusinessStatus":"Active","Highlights":null},{"CaseId":"224cadc9-88ad-41e2-8f70-7473d977fcec","CaseNumber":"LTR-007238-2025","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-13T23:00:01.58","ApplyDate":"2025-12-13T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"60","AddressLine2":"MELLEN
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"60
+        MELLEN ST Portland ME 04101"},"ModuleName":8,"AddressDisplay":"60 MELLEN ST
+        Portland ME 04101","MainParcel":"048  E013001","Description":"","DBA":"60
+        MELLEN STREET LLC","LicenseYear":null,"CompanyName":"60 MELLEN STREET LLC","CompanyTypeName":"Limited
+        Liability Company","BusinessTypeName":"","TaxID":null,"OpenedDate":"2025-10-21T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"6945fa1f-2774-4c75-910f-fad862c158ff","BusinessStatus":"Active","Highlights":null},{"CaseId":"2277f249-e6c7-43bb-b874-98af69bf5954","CaseNumber":"20180338","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T13:39:45","ApplyDate":"2025-12-16T13:38:37.027","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"22","AddressLine2":"ORANGE
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"22
+        ORANGE ST Portland ME"},"ModuleName":8,"AddressDisplay":"22 ORANGE ST Portland
+        ME","MainParcel":"057  F007001","Description":"Housing Safety Registration","DBA":"TRISHIA
+        ANNE MACOMBER","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-08T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"F1934D90-25B4-4C6C-BE1B-DCF5B540E8BB","BusinessStatus":"Active","Highlights":null},{"CaseId":"2635a16e-1013-4668-ab9c-dee243afba29","CaseNumber":"20161667","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T12:33:31","ApplyDate":"2025-12-15T12:27:27.307","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"291","AddressLine2":"SPRING
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"291
+        SPRING ST Portland ME"},"ModuleName":8,"AddressDisplay":"291 SPRING ST Portland
+        ME","MainParcel":"056  G010001","Description":"Housing Safety Registration","DBA":"291-314
+        Spring Street LLC","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-16T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"2DDC571C-74E5-40F0-BFEA-20FD2E71FD3C","BusinessStatus":"Active","Highlights":null},{"CaseId":"2663f182-7fd2-4de6-acd3-60bb3007c963","CaseNumber":"LTR-003403-2021","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:06.427","ApplyDate":"2025-12-11T07:53:44.667","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"13","AddressLine2":"GRANITE
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"13
+        GRANITE ST   Portland ME 04102"},"ModuleName":8,"AddressDisplay":"13 GRANITE
+        ST Portland ME 04102","MainParcel":"051  E021001","Description":"","DBA":"SHERMAN
+        HOLDINGS LLC","LicenseYear":null,"CompanyName":"SHERMAN HOLDINGS LLC","CompanyTypeName":"Limited
+        Liability Company","BusinessTypeName":"","TaxID":null,"OpenedDate":"2021-05-18T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"ae7cf304-b874-4a28-a2f2-690bcd68da7d","BusinessStatus":"Active","Highlights":null},{"CaseId":"26b851a8-06de-4044-855a-ea44853d828e","CaseNumber":"LTR-003880-2021","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-12T23:00:03.433","ApplyDate":"2025-12-12T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"85","AddressLine2":"VESPER
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"85
+        VESPER ST   Portland ME 04101"},"ModuleName":8,"AddressDisplay":"85 VESPER
+        ST Portland ME 04101","MainParcel":"003  D013001","Description":"","DBA":"SOULTANAKIS
+        EMMANUEL N & JULIA BROCK JTS","LicenseYear":null,"CompanyName":"SOULTANAKIS
+        EMMANUEL N & JULIA BROCK JTS","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":null,"ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"484e9769-c1b2-4442-9244-d98546f7472c","BusinessStatus":"Active","Highlights":null},{"CaseId":"27e19e50-8091-4f36-bd5c-240529679102","CaseNumber":"LTR-006061-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:07.33","ApplyDate":"2025-12-08T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"12","AddressLine2":"NYE
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"12
+        NYE ST Portland ME 04101"},"ModuleName":8,"AddressDisplay":"12 NYE ST Portland
+        ME 04101","MainParcel":"044  A018001","Description":"","DBA":"PEREGRINE CORPORATION","LicenseYear":null,"CompanyName":"PEREGRINE
+        CORPORATION","CompanyTypeName":"Corporation","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-04-11T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"b3cd0ad1-c6c1-486f-b5c9-4ff080d44b65","BusinessStatus":"Active","Highlights":null},{"CaseId":"282de3e8-9340-4e72-a204-fddbe2fafbc0","CaseNumber":"20181961","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T16:28:30","ApplyDate":"2025-12-17T16:25:47.32","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"25","AddressLine2":"SHERIDAN
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"25
+        SHERIDAN ST Portland ME"},"ModuleName":8,"AddressDisplay":"25 SHERIDAN ST
+        Portland ME","MainParcel":"017  F019001","Description":"Housing Safety Registration","DBA":"Terry
+        Durrell","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-29T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"E33EDB77-DBB8-4DD1-B40B-44439DF83A41","BusinessStatus":"Active","Highlights":null},{"CaseId":"2b3fd0f6-c285-42d4-b8a7-9c5695786822","CaseNumber":"LTR-005763-2023","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T23:00:02.757","ApplyDate":"2025-12-17T11:48:10.977","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"55","AddressLine2":"LAMBERT
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"17","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"55
+        LAMBERT ST 17 Portland ME 04103"},"ModuleName":8,"AddressDisplay":"55 LAMBERT
+        ST Unit: 17 Portland ME 04103","MainParcel":"382A B012A10","Description":"","DBA":"55
+        Lambert ME LLC","LicenseYear":null,"CompanyName":"55 Lambert ME LLC","CompanyTypeName":"Limited
+        Liability Company","BusinessTypeName":"","TaxID":null,"OpenedDate":null,"ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"00a4b79d-a61c-4e59-9718-307690632e1d","BusinessStatus":"Active","Highlights":null},{"CaseId":"2dbb6d5d-40f9-4141-91c7-85f54705eb50","CaseNumber":"20180405","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Multi Family","CaseWorkclassId":null,"CaseWorkclass":"Multi
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T08:11:51","ApplyDate":"2025-12-04T14:33:42.213","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"76","AddressLine2":"WINTER
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"76
+        WINTER ST Portland ME"},"ModuleName":8,"AddressDisplay":"76 WINTER ST Portland
+        ME","MainParcel":"045  E016001","Description":"Housing Safety Registration","DBA":"76
+        WINTER ST LLC ","LicenseYear":null,"CompanyName":"76 WINTER ST LLC","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-09T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"B75F21EB-1B0C-4BB2-8546-9AA2D66CACA0","BusinessStatus":"Active","Highlights":null}],"TotalPages":111,"PermitsFound":0,"PlansFound":0,"InspectionsFound":0,"CodeCasesFound":0,"RequestsFound":0,"BusinessLicensesFound":0,"ProfessionalLicensesFound":0,"LicensesFound":0,"ProjectsFound":0,"OperationalPermitsFound":0,"TotalFound":2215},"Success":true,"ErrorMessage":"","ValidationErrorMessage":"","ConcurrencyErrorMessage":"","StatusCode":200,"BrokenRules":[]}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '29659'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 26 Mar 2026 15:11:07 GMT
+      Expires:
+      - '-1'
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/10.0
+      - Microsoft-IIS/10.0
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - ASP.NET
+      X-XSS-Protection:
+      - '1'
+      frame-ancestors:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"Keyword": "", "ExactMatch": true, "SearchModule": 10, "FilterModule":
+      1, "SearchMainAddress": false, "PlanCriteria": {"PlanNumber": null, "PlanTypeId":
+      null, "PlanWorkclassId": null, "PlanStatusId": null, "ProjectName": null, "ApplyDateFrom":
+      null, "ApplyDateTo": null, "ExpireDateFrom": null, "ExpireDateTo": null, "CompleteDateFrom":
+      null, "CompleteDateTo": null, "Address": null, "Description": null, "SearchMainAddress":
+      false, "ContactId": null, "ParcelNumber": null, "TypeId": null, "WorkClassIds":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "PermitCriteria":
+      {"PermitNumber": null, "PermitTypeId": null, "PermitWorkclassId": null, "PermitStatusId":
+      null, "ProjectName": null, "IssueDateFrom": null, "IssueDateTo": null, "Address":
+      null, "Description": null, "ExpireDateFrom": null, "ExpireDateTo": null, "FinalDateFrom":
+      null, "FinalDateTo": null, "ApplyDateFrom": null, "ApplyDateTo": null, "SearchMainAddress":
+      false, "ContactId": null, "TypeId": null, "WorkClassIds": null, "ParcelNumber":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "InspectionCriteria":
+      {"Keyword": null, "ExactMatch": false, "Complete": null, "InspectionNumber":
+      null, "InspectionTypeId": null, "InspectionStatusId": null, "RequestDateFrom":
+      null, "RequestDateTo": null, "ScheduleDateFrom": null, "ScheduleDateTo": null,
+      "Address": null, "SearchMainAddress": false, "ContactId": null, "TypeId": [],
+      "WorkClassIds": [], "ParcelNumber": null, "DisplayCodeInspections": false, "ExcludeCases":
+      [], "ExcludeFilterModules": [], "HiddenInspectionTypeIDs": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "CodeCaseCriteria":
+      {"CodeCaseNumber": null, "CodeCaseTypeId": null, "CodeCaseStatusId": null, "ProjectName":
+      null, "OpenedDateFrom": null, "OpenedDateTo": null, "ClosedDateFrom": null,
+      "ClosedDateTo": null, "Address": null, "ParcelNumber": null, "Description":
+      null, "SearchMainAddress": false, "RequestId": null, "ExcludeCases": null, "ContactId":
+      null, "EnableDescriptionSearch": false, "PageNumber": 0, "PageSize": 0, "SortBy":
+      null, "SortAscending": false}, "RequestCriteria": {"RequestNumber": null, "RequestTypeId":
+      null, "RequestStatusId": null, "ProjectName": null, "EnteredDateFrom": null,
+      "EnteredDateTo": null, "DeadlineDateFrom": null, "DeadlineDateTo": null, "CompleteDateFrom":
+      null, "CompleteDateTo": null, "Address": null, "ParcelNumber": null, "SearchMainAddress":
+      false, "PageNumber": 0, "PageSize": 0, "SortBy": null, "SortAscending": false},
+      "BusinessLicenseCriteria": {"LicenseNumber": null, "LicenseTypeId": null, "LicenseClassId":
+      null, "LicenseStatusId": null, "BusinessStatusId": null, "LicenseYear": null,
+      "ApplicationDateFrom": null, "ApplicationDateTo": null, "IssueDateFrom": null,
+      "IssueDateTo": null, "ExpirationDateFrom": null, "ExpirationDateTo": null, "SearchMainAddress":
+      false, "CompanyTypeId": null, "CompanyName": null, "BusinessTypeId": null, "Description":
+      null, "CompanyOpenedDateFrom": null, "CompanyOpenedDateTo": null, "CompanyClosedDateFrom":
+      null, "CompanyClosedDateTo": null, "LastAuditDateFrom": null, "LastAuditDateTo":
+      null, "ParcelNumber": null, "Address": null, "TaxID": null, "DBA": null, "ExcludeCases":
+      null, "TypeId": null, "WorkClassIds": null, "ContactId": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "ProfessionalLicenseCriteria":
+      {"LicenseNumber": null, "HolderFirstName": null, "HolderMiddleName": null, "HolderLastName":
+      null, "HolderCompanyName": null, "LicenseTypeId": null, "LicenseClassId": null,
+      "LicenseStatusId": null, "IssueDateFrom": null, "IssueDateTo": null, "ExpirationDateFrom":
+      null, "ExpirationDateTo": null, "ApplicationDateFrom": null, "ApplicationDateTo":
+      null, "Address": null, "MainParcel": null, "SearchMainAddress": false, "ExcludeCases":
+      null, "TypeId": null, "WorkClassIds": null, "ContactId": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "LicenseCriteria":
+      {"LicenseNumber": null, "LicenseTypeId": "ddf09feb-ce7d-4437-839d-33296fd1c849_5c7dadf7-db4e-4d4d-a1fa-c109dbf3c0c5",
+      "LicenseClassId": "none", "LicenseStatusId": "none", "BusinessStatusId": "none",
+      "ApplicationDateFrom": null, "ApplicationDateTo": null, "IssueDateFrom": "2025-01-01",
+      "IssueDateTo": null, "ExpirationDateFrom": null, "ExpirationDateTo": null, "SearchMainAddress":
+      false, "CompanyTypeId": "none", "CompanyName": null, "BusinessTypeId": "none",
+      "Description": null, "CompanyOpenedDateFrom": null, "CompanyOpenedDateTo": null,
+      "CompanyClosedDateFrom": null, "CompanyClosedDateTo": null, "LastAuditDateFrom":
+      null, "LastAuditDateTo": null, "ParcelNumber": null, "Address": null, "TaxID":
+      null, "DBA": null, "ExcludeCases": null, "TypeId": null, "WorkClassIds": null,
+      "ContactId": null, "HolderFirstName": null, "HolderMiddleName": null, "HolderLastName":
+      null, "MainParcel": null, "EnableDescriptionSearchForBLicense": false, "EnableDescriptionSearchForPLicense":
+      false, "PageNumber": 1, "PageSize": 20, "SortBy": "relevance", "SortAscending":
+      false}, "ProjectCriteria": {"ProjectNumber": null, "ProjectName": null, "Address":
+      null, "ParcelNumber": null, "StartDateFrom": null, "StartDateTo": null, "ExpectedEndDateFrom":
+      null, "ExpectedEndDateTo": null, "CompleteDateFrom": null, "CompleteDateTo":
+      null, "Description": null, "SearchMainAddress": false, "ContactId": null, "TypeId":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "LicenseSortList":
+      [{"Key": "relevance", "Value": "Relevance"}, {"Key": "LicenseNumber.keyword",
+      "Value": "License Number"}, {"Key": "CompanyName.keyword", "Value": "Company
+      Name"}, {"Key": "AppliedDate", "Value": "Applied Date"}, {"Key": "MainAddress",
+      "Value": "Address"}], "ExcludeCases": null, "SortOrderList": [{"Key": true,
+      "Value": "Ascending"}, {"Key": false, "Value": "Descending"}], "HiddenInspectionTypeIDs":
+      null, "PageNumber": 0, "PageSize": 0, "SortBy": "relevance", "SortAscending":
+      true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6142'
+      Content-Type:
+      - application/json
+      DNT:
+      - '1'
+      Referer:
+      - https://selfservice.portlandmaine.gov/energov_prod/selfservice
+      User-Agent:
+      - python-requests/2.33.0
+      tenantId:
+      - '1'
+      tenantName:
+      - EnerGovProd
+    method: POST
+    uri: https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/search/search
+  response:
+    body:
+      string: '{"Result":{"EntityResults":[{"CaseId":"20ceeff4-37f3-4dea-b817-1cb9cad464db","CaseNumber":"LTR-002257-2020","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-03-12T15:54:03","ApplyDate":"2025-03-12T13:51:11.01","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"29","AddressLine2":"PARRIS
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"29
+        PARRIS ST   Portland ME 04101"},"ModuleName":8,"AddressDisplay":"29 PARRIS
+        ST Portland ME 04101","MainParcel":"033  I001293","Description":"","DBA":"ANNA
+        GUARE","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2020-02-19T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"5facdb88-1fd1-46e0-9afa-12e3825224cb","BusinessStatus":"Active","Highlights":null},{"CaseId":"8593e25a-c74b-40b3-ad0b-eb308c46417c","CaseNumber":"LTR-005653-2023","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-01-03T10:40:26","ApplyDate":"2024-11-01T15:20:34.173","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"8","AddressLine2":"QUAKER
+        LN","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"8
+        QUAKER LN Portland ME 04103"},"ModuleName":8,"AddressDisplay":"8 QUAKER LN
+        Portland ME 04103","MainParcel":"372  A006008","Description":"","DBA":"ELIZABETH
+        & CHARLES BULLETT","LicenseYear":null,"CompanyName":"ELIZABETH & CHARLES BULLETT","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2023-09-18T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"d092cff4-5df0-44bb-9d79-d29a466c049b","BusinessStatus":"Active","Highlights":null},{"CaseId":"8df18c35-129b-4214-9edb-2abeeda9220c","CaseNumber":"LTR-004022-2022","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-06-09T09:47:31","ApplyDate":"2025-05-22T07:24:16.767","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"37","AddressLine2":"HIGH
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"37
+        HIGH ST   Portland ME 04101"},"ModuleName":8,"AddressDisplay":"37 HIGH ST
+        Portland ME 04101","MainParcel":"040  C015004","Description":"","DBA":"MACHIAVELLI
+        LLC","LicenseYear":null,"CompanyName":"MACHIAVELLI LLC","CompanyTypeName":"Limited
+        Liability Company","BusinessTypeName":"","TaxID":null,"OpenedDate":"2022-03-01T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"18ddaa56-9734-4c24-867e-dc0a74332c54","BusinessStatus":"Active","Highlights":null},{"CaseId":"1d1b0a35-208f-43be-ac65-4620801bc8da","CaseNumber":"LTR-006518-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T14:14:14","ApplyDate":"2025-12-15T14:13:08.527","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"5","AddressLine2":"WALKER
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"5
+        WALKER ST Portland ME 04102"},"ModuleName":8,"AddressDisplay":"5 WALKER ST
+        Portland ME 04102","MainParcel":"055  C019305","Description":"","DBA":"Robin
+        Sullivan","LicenseYear":null,"CompanyName":"Robin Sullivan","CompanyTypeName":"Sole
+        Proprietorship D/B/A","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-12-09T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"d6b7c74f-3547-4383-9922-dca43e9f28d9","BusinessStatus":"Active","Highlights":null},{"CaseId":"27cebdc8-9452-4fdf-9434-eb4857548d14","CaseNumber":"20160952","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:06.863","ApplyDate":"2025-12-15T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"16","AddressLine2":"FOX
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"16
+        FOX ST Portland ME"},"ModuleName":8,"AddressDisplay":"16 FOX ST Portland ME","MainParcel":"012  K002001","Description":"Housing
+        Safety Registration","DBA":"CHRISTOPHER J BRUNI","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-30T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"73123208-745E-4259-AC97-929C3D0A9B48","BusinessStatus":"Active","Highlights":null},{"CaseId":"28df0185-18f5-4f12-a299-ecbce7ede170","CaseNumber":"LTR-004828-2022","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-12T23:00:03.887","ApplyDate":"2025-12-12T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"93","AddressLine2":"WESTMINSTER
+        AVE","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":" ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"93
+        WESTMINSTER AVE   Portland ME 04103"},"ModuleName":8,"AddressDisplay":"93
+        WESTMINSTER AVE Portland ME 04103","MainParcel":"181  D007001","Description":"","DBA":"MARTHA
+        PANKOVICH","LicenseYear":null,"CompanyName":"MARTHA PANKOVICH","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2022-09-30T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"af75d2a9-9d51-4535-a528-ac981d9990ba","BusinessStatus":"Active","Highlights":null},{"CaseId":"2eff6fbd-10c1-4feb-8177-f67e8cbe86d8","CaseNumber":"20180743","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-13T23:00:02.12","ApplyDate":"2025-12-13T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"76","AddressLine2":"KANSAS
+        AVE","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"76
+        KANSAS AVE Portland ME"},"ModuleName":8,"AddressDisplay":"76 KANSAS AVE Portland
+        ME","MainParcel":"404  B006001","Description":"Housing Safety Registration","DBA":"TAMIKO
+        N DAVIES & THERESE L GUERETTE JTS","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-23T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"DE4F14A8-63C5-4B1E-90BC-B0949352D943","BusinessStatus":"Active","Highlights":null},{"CaseId":"3725fa24-8766-41b8-b920-0967cdfa523c","CaseNumber":"LTR-005956-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:09.017","ApplyDate":"2025-12-16T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"49","AddressLine2":"SEASHORE
+        AVE","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04108","IsMain":true,"FullAddress":"49
+        SEASHORE AVE Portland ME 04108"},"ModuleName":8,"AddressDisplay":"49 SEASHORE
+        AVE Portland ME 04108","MainParcel":"084  E001001","Description":"","DBA":"CORINNE
+        JACQUES","LicenseYear":null,"CompanyName":"CORINNE JACQUES","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-02-15T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"2337fb7e-e75b-4bf5-af23-62c8dda30c0a","BusinessStatus":"Active","Highlights":null},{"CaseId":"381dfcb4-307f-4f6f-9457-364c04709341","CaseNumber":"20180959","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:09.49","ApplyDate":"2025-12-15T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"23","AddressLine2":"BERWICK
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"23
+        BERWICK ST Portland ME"},"ModuleName":8,"AddressDisplay":"23 BERWICK ST Portland
+        ME","MainParcel":"430  B003001","Description":"Housing Safety Registration","DBA":"L
+        BONARRIGO LLC  ","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-30T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"400BC9E2-3F89-4D98-B248-4D9CDDF31F07","BusinessStatus":"Active","Highlights":null},{"CaseId":"38410e35-3e58-4f83-a5be-af248769eb65","CaseNumber":"20181125","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T11:34:23","ApplyDate":"2025-12-15T11:28:00.86","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"22","AddressLine2":"WEBB
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"22
+        WEBB ST Portland ME"},"ModuleName":8,"AddressDisplay":"22 WEBB ST Portland
+        ME","MainParcel":"263  C010001","Description":"Housing Safety Registration","DBA":"Lorna
+        Murrell","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-04T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"01A70158-CFEE-40C3-B945-970A18D1C2CC","BusinessStatus":"Active","Highlights":null},{"CaseId":"385b2c80-bfa5-4667-aa88-d5e082139203","CaseNumber":"LTR-005351-2023","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T13:49:13","ApplyDate":"2025-12-15T13:47:40.507","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"35","AddressLine2":"ALTON
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":" ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"35
+        ALTON ST   Portland ME 04103"},"ModuleName":8,"AddressDisplay":"35 ALTON ST
+        Portland ME 04103","MainParcel":"168  M017001","Description":"","DBA":"PORTER
+        ERKKINEN","LicenseYear":null,"CompanyName":"PORTER ERKKINEN","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2023-04-12T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"541b1968-42fc-423c-8450-9e0754a0b21c","BusinessStatus":"Active","Highlights":null},{"CaseId":"39a293ee-01fa-4139-9f72-9761a030b009","CaseNumber":"LTR-006130-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-11T08:28:41","ApplyDate":"2025-12-11T08:20:10.687","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"75","AddressLine2":"CHESTNUT
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"75
+        CHESTNUT ST Portland ME 04101"},"ModuleName":8,"AddressDisplay":"75 CHESTNUT
+        ST Portland ME 04101","MainParcel":"026  E004401","Description":"","DBA":"","LicenseYear":null,"CompanyName":"BREWSTER
+        TAYLOR","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-05-08T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"d848c0ec-6e75-42a3-86b4-76bdc39760e9","BusinessStatus":"Active","Highlights":null},{"CaseId":"3bd71275-3725-488f-897d-9c0f2a1d4fa4","CaseNumber":"20182810","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T16:34:39","ApplyDate":"2025-12-17T16:32:46.457","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"121","AddressLine2":"WELLINGTON
+        RD","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"121
+        WELLINGTON RD Portland ME"},"ModuleName":8,"AddressDisplay":"121 WELLINGTON
+        RD Portland ME","MainParcel":"141  D003001","Description":"Housing Safety
+        Registration","DBA":"Timothy H Skehan","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-18T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"FAE46A4C-2BF9-423C-89DC-E5732D13505D","BusinessStatus":"Active","Highlights":null},{"CaseId":"4777f83c-df40-4b05-a14a-87bc13859809","CaseNumber":"LTR-005615-2023","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:11.997","ApplyDate":"2025-12-16T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"245","AddressLine2":"SAINT
+        JOHN ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"245
+        SAINT JOHN ST Portland ME 04102"},"ModuleName":8,"AddressDisplay":"245 SAINT
+        JOHN ST Portland ME 04102","MainParcel":"064  D022001","Description":"","DBA":"RAYMOND
+        BURKE","LicenseYear":null,"CompanyName":"RAYMOND BURKE","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2023-08-18T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"8d7a85e9-fdef-4a37-a174-9fcae3d687e6","BusinessStatus":"Active","Highlights":null},{"CaseId":"52f58c6e-48c9-47e8-8a12-eb594325b9c9","CaseNumber":"LTR-002969-2021","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T14:21:11","ApplyDate":"2025-12-15T14:20:18.767","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"198","AddressLine2":"HIGH
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"198
+        HIGH ST   Portland ME 04101"},"ModuleName":8,"AddressDisplay":"198 HIGH ST
+        Portland ME 04101","MainParcel":"046  B007006","Description":"","DBA":"Lee
+        Cline","LicenseYear":null,"CompanyName":"Lee Cline","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":null,"ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"ba38fe04-ea0c-4fc2-8791-b83e5082f0db","BusinessStatus":"Active","Highlights":null},{"CaseId":"541bc87c-b21c-4de6-8c58-0df4e526108f","CaseNumber":"LTR-006058-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T09:15:59","ApplyDate":"2025-12-15T09:14:38.637","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"60","AddressLine2":"PARRIS
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"60
+        PARRIS ST Portland ME 04101"},"ModuleName":8,"AddressDisplay":"60 PARRIS ST
+        Portland ME 04101","MainParcel":"033  A013305","Description":"","DBA":"MICHELANGELO
+        CERCIELLO","LicenseYear":null,"CompanyName":"MICHELANGELO CERCIELLO","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-04-11T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"379fcf0b-ebe8-44be-8ffd-410f05a24d7f","BusinessStatus":"Active","Highlights":null},{"CaseId":"5b3eac25-3b55-49d2-bc13-2cdae9d85e9f","CaseNumber":"20181283","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:15.323","ApplyDate":"2025-12-16T11:07:26.223","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"50","AddressLine2":"READ
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"50
+        READ ST Portland ME"},"ModuleName":8,"AddressDisplay":"50 READ ST Portland
+        ME","MainParcel":"141  F046001","Description":"Housing Safety Registration","DBA":"Andrea
+        Matison","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-06T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"1E887EC4-9B67-4E02-AFBA-362E370F9D13","BusinessStatus":"Active","Highlights":null},{"CaseId":"5b72a472-579c-4add-a9bd-9252554609c1","CaseNumber":"LTR-002255-2020","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T23:00:07.63","ApplyDate":"2025-12-16T14:38:28.003","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"13","AddressLine2":"CUSHING
+        CT","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"13
+        CUSHING CT   Portland ME 04103"},"ModuleName":8,"AddressDisplay":"13 CUSHING
+        CT Portland ME 04103","MainParcel":"173  A001C13","Description":"","DBA":"KIA
+        KAHA LLC","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Limited Liability
+        Company","BusinessTypeName":"","TaxID":null,"OpenedDate":"2020-02-18T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"3d053d96-1f9f-47df-91e3-1a8988ffdecb","BusinessStatus":"Active","Highlights":null},{"CaseId":"60365e32-41a9-4dc6-a248-d85148246342","CaseNumber":"LTR-006254-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:16.867","ApplyDate":"2025-12-16T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"243","AddressLine2":"SPRING
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"243
+        SPRING ST Portland ME 04102"},"ModuleName":8,"AddressDisplay":"243 SPRING
+        ST Portland ME 04102","MainParcel":"056  G048001","Description":"","DBA":"WILLIAM
+        & JESSI DENSLOW","LicenseYear":null,"CompanyName":"WILLIAM & JESSI DENSLOW","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-07-09T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"f20dc901-3e3c-4a0e-8ceb-4ae1059b33e5","BusinessStatus":"Active","Highlights":null},{"CaseId":"61292d9a-c2b0-452c-9170-fda93ea5bd39","CaseNumber":"LTR-004951-2022","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Single Family","CaseWorkclassId":null,"CaseWorkclass":"Single
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T23:00:09.157","ApplyDate":"2025-12-17T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"66","AddressLine2":"CARON
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"66
+        CARON ST   Portland ME 04103"},"ModuleName":8,"AddressDisplay":"66 CARON ST
+        Portland ME 04103","MainParcel":"387  A024001","Description":"","DBA":"DIANA
+        PELOSI, TRUSTEE","LicenseYear":null,"CompanyName":"DIANA PELOSI, TRUSTEE","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2022-12-07T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"a241507c-3f12-4149-a2aa-25e3f9946aef","BusinessStatus":"Active","Highlights":null}],"TotalPages":47,"PermitsFound":0,"PlansFound":0,"InspectionsFound":0,"CodeCasesFound":0,"RequestsFound":0,"BusinessLicensesFound":0,"ProfessionalLicensesFound":0,"LicensesFound":0,"ProjectsFound":0,"OperationalPermitsFound":0,"TotalFound":925},"Success":true,"ErrorMessage":"","ValidationErrorMessage":"","ConcurrencyErrorMessage":"","StatusCode":200,"BrokenRules":[]}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '29608'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 26 Mar 2026 15:11:12 GMT
+      Expires:
+      - '-1'
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/10.0
+      - Microsoft-IIS/10.0
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - ASP.NET
+      X-XSS-Protection:
+      - '1'
+      frame-ancestors:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"Keyword": "", "ExactMatch": true, "SearchModule": 10, "FilterModule":
+      1, "SearchMainAddress": false, "PlanCriteria": {"PlanNumber": null, "PlanTypeId":
+      null, "PlanWorkclassId": null, "PlanStatusId": null, "ProjectName": null, "ApplyDateFrom":
+      null, "ApplyDateTo": null, "ExpireDateFrom": null, "ExpireDateTo": null, "CompleteDateFrom":
+      null, "CompleteDateTo": null, "Address": null, "Description": null, "SearchMainAddress":
+      false, "ContactId": null, "ParcelNumber": null, "TypeId": null, "WorkClassIds":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "PermitCriteria":
+      {"PermitNumber": null, "PermitTypeId": null, "PermitWorkclassId": null, "PermitStatusId":
+      null, "ProjectName": null, "IssueDateFrom": null, "IssueDateTo": null, "Address":
+      null, "Description": null, "ExpireDateFrom": null, "ExpireDateTo": null, "FinalDateFrom":
+      null, "FinalDateTo": null, "ApplyDateFrom": null, "ApplyDateTo": null, "SearchMainAddress":
+      false, "ContactId": null, "TypeId": null, "WorkClassIds": null, "ParcelNumber":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "InspectionCriteria":
+      {"Keyword": null, "ExactMatch": false, "Complete": null, "InspectionNumber":
+      null, "InspectionTypeId": null, "InspectionStatusId": null, "RequestDateFrom":
+      null, "RequestDateTo": null, "ScheduleDateFrom": null, "ScheduleDateTo": null,
+      "Address": null, "SearchMainAddress": false, "ContactId": null, "TypeId": [],
+      "WorkClassIds": [], "ParcelNumber": null, "DisplayCodeInspections": false, "ExcludeCases":
+      [], "ExcludeFilterModules": [], "HiddenInspectionTypeIDs": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "CodeCaseCriteria":
+      {"CodeCaseNumber": null, "CodeCaseTypeId": null, "CodeCaseStatusId": null, "ProjectName":
+      null, "OpenedDateFrom": null, "OpenedDateTo": null, "ClosedDateFrom": null,
+      "ClosedDateTo": null, "Address": null, "ParcelNumber": null, "Description":
+      null, "SearchMainAddress": false, "RequestId": null, "ExcludeCases": null, "ContactId":
+      null, "EnableDescriptionSearch": false, "PageNumber": 0, "PageSize": 0, "SortBy":
+      null, "SortAscending": false}, "RequestCriteria": {"RequestNumber": null, "RequestTypeId":
+      null, "RequestStatusId": null, "ProjectName": null, "EnteredDateFrom": null,
+      "EnteredDateTo": null, "DeadlineDateFrom": null, "DeadlineDateTo": null, "CompleteDateFrom":
+      null, "CompleteDateTo": null, "Address": null, "ParcelNumber": null, "SearchMainAddress":
+      false, "PageNumber": 0, "PageSize": 0, "SortBy": null, "SortAscending": false},
+      "BusinessLicenseCriteria": {"LicenseNumber": null, "LicenseTypeId": null, "LicenseClassId":
+      null, "LicenseStatusId": null, "BusinessStatusId": null, "LicenseYear": null,
+      "ApplicationDateFrom": null, "ApplicationDateTo": null, "IssueDateFrom": null,
+      "IssueDateTo": null, "ExpirationDateFrom": null, "ExpirationDateTo": null, "SearchMainAddress":
+      false, "CompanyTypeId": null, "CompanyName": null, "BusinessTypeId": null, "Description":
+      null, "CompanyOpenedDateFrom": null, "CompanyOpenedDateTo": null, "CompanyClosedDateFrom":
+      null, "CompanyClosedDateTo": null, "LastAuditDateFrom": null, "LastAuditDateTo":
+      null, "ParcelNumber": null, "Address": null, "TaxID": null, "DBA": null, "ExcludeCases":
+      null, "TypeId": null, "WorkClassIds": null, "ContactId": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "ProfessionalLicenseCriteria":
+      {"LicenseNumber": null, "HolderFirstName": null, "HolderMiddleName": null, "HolderLastName":
+      null, "HolderCompanyName": null, "LicenseTypeId": null, "LicenseClassId": null,
+      "LicenseStatusId": null, "IssueDateFrom": null, "IssueDateTo": null, "ExpirationDateFrom":
+      null, "ExpirationDateTo": null, "ApplicationDateFrom": null, "ApplicationDateTo":
+      null, "Address": null, "MainParcel": null, "SearchMainAddress": false, "ExcludeCases":
+      null, "TypeId": null, "WorkClassIds": null, "ContactId": null, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "LicenseCriteria":
+      {"LicenseNumber": null, "LicenseTypeId": "ddf09feb-ce7d-4437-839d-33296fd1c849_0b3794bb-b86f-467c-b6c0-6d473a8c6966",
+      "LicenseClassId": "none", "LicenseStatusId": "none", "BusinessStatusId": "none",
+      "ApplicationDateFrom": null, "ApplicationDateTo": null, "IssueDateFrom": "2025-01-01",
+      "IssueDateTo": null, "ExpirationDateFrom": null, "ExpirationDateTo": null, "SearchMainAddress":
+      false, "CompanyTypeId": "none", "CompanyName": null, "BusinessTypeId": "none",
+      "Description": null, "CompanyOpenedDateFrom": null, "CompanyOpenedDateTo": null,
+      "CompanyClosedDateFrom": null, "CompanyClosedDateTo": null, "LastAuditDateFrom":
+      null, "LastAuditDateTo": null, "ParcelNumber": null, "Address": null, "TaxID":
+      null, "DBA": null, "ExcludeCases": null, "TypeId": null, "WorkClassIds": null,
+      "ContactId": null, "HolderFirstName": null, "HolderMiddleName": null, "HolderLastName":
+      null, "MainParcel": null, "EnableDescriptionSearchForBLicense": false, "EnableDescriptionSearchForPLicense":
+      false, "PageNumber": 1, "PageSize": 20, "SortBy": "relevance", "SortAscending":
+      false}, "ProjectCriteria": {"ProjectNumber": null, "ProjectName": null, "Address":
+      null, "ParcelNumber": null, "StartDateFrom": null, "StartDateTo": null, "ExpectedEndDateFrom":
+      null, "ExpectedEndDateTo": null, "CompleteDateFrom": null, "CompleteDateTo":
+      null, "Description": null, "SearchMainAddress": false, "ContactId": null, "TypeId":
+      null, "ExcludeCases": null, "EnableDescriptionSearch": false, "PageNumber":
+      0, "PageSize": 0, "SortBy": null, "SortAscending": false}, "LicenseSortList":
+      [{"Key": "relevance", "Value": "Relevance"}, {"Key": "LicenseNumber.keyword",
+      "Value": "License Number"}, {"Key": "CompanyName.keyword", "Value": "Company
+      Name"}, {"Key": "AppliedDate", "Value": "Applied Date"}, {"Key": "MainAddress",
+      "Value": "Address"}], "ExcludeCases": null, "SortOrderList": [{"Key": true,
+      "Value": "Ascending"}, {"Key": false, "Value": "Descending"}], "HiddenInspectionTypeIDs":
+      null, "PageNumber": 0, "PageSize": 0, "SortBy": "relevance", "SortAscending":
+      true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6142'
+      Content-Type:
+      - application/json
+      DNT:
+      - '1'
+      Referer:
+      - https://selfservice.portlandmaine.gov/energov_prod/selfservice
+      User-Agent:
+      - python-requests/2.33.0
+      tenantId:
+      - '1'
+      tenantName:
+      - EnerGovProd
+    method: POST
+    uri: https://selfservice.portlandmaine.gov/energov_prod/selfservice/api/energov/search/search
+  response:
+    body:
+      string: '{"Result":{"EntityResults":[{"CaseId":"84ae6d4c-91a4-4e9d-99a6-68b9095b3726","CaseNumber":"20182123","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-03-18T08:52:10","ApplyDate":"2025-03-18T08:44:30.67","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"126","AddressLine2":"WELLINGTON
+        RD","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"126
+        WELLINGTON RD Portland ME"},"ModuleName":8,"AddressDisplay":"126 WELLINGTON
+        RD Portland ME","MainParcel":"141  C020001","Description":"Housing Safety
+        Registration","DBA":"Barry Griffith","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-19T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"A431F6A6-FC36-41AC-B828-1A6FF7DFE8A7","BusinessStatus":"Active","Highlights":null},{"CaseId":"c86dc28f-1416-4704-b5ee-78945ba801a7","CaseNumber":"LTR-003931-2022","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-01-03T09:44:27","ApplyDate":"2025-01-03T09:44:16.83","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"213","AddressLine2":"SAINT
+        JOHN ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"213
+        SAINT JOHN ST   Portland ME 04102"},"ModuleName":8,"AddressDisplay":"213 SAINT
+        JOHN ST Portland ME 04102","MainParcel":"064  F005001","Description":"","DBA":"Alan
+        Prosser","LicenseYear":null,"CompanyName":"Alan Prosser","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":null,"ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"05ac1dea-6cd3-47b2-8fd7-32ed6938790f","BusinessStatus":"Active","Highlights":null},{"CaseId":"d455cc62-6d67-4e56-8228-58898572d5ae","CaseNumber":"LTR-007041-2025","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Revoked","ProjectName":null,"IssueDate":"2025-06-11T11:05:31","ApplyDate":"2025-06-11T11:00:14","ExpireDate":"2025-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"105","AddressLine2":"BRACKETT
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"Rear","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"105
+        BRACKETT ST Rear Portland ME 04102"},"ModuleName":8,"AddressDisplay":"105
+        BRACKETT ST Unit: Rear Portland ME 04102","MainParcel":"045  F037001","Description":"","DBA":"DAVID
+        KORZEN","LicenseYear":null,"CompanyName":"DAVID KORZEN","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2025-06-11T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"42fa3378-1d1d-4109-99db-1cf87d12dd6d","BusinessStatus":"Active","Highlights":null},{"CaseId":"1f1c1711-1707-4284-91a5-b19ae9b6cfbe","CaseNumber":"LTR-001985-2019","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-12T23:00:01.763","ApplyDate":"2025-12-12T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"430","AddressLine2":"WOODFORD
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"430
+        WOODFORD ST   Portland ME 04103"},"ModuleName":8,"AddressDisplay":"430 WOODFORD
+        ST Portland ME 04103","MainParcel":"176  F008001","Description":"","DBA":"TIMOTHY
+        GIKAS","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2019-11-26T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"aaaf5960-4815-4fbb-85b9-ab711921a90e","BusinessStatus":"Active","Highlights":null},{"CaseId":"201680c1-9a3c-4563-96aa-14ce92274ed3","CaseNumber":"20183109","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T14:47:27","ApplyDate":"2025-12-17T14:45:48.387","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"225","AddressLine2":"HICKS
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"225
+        HICKS ST Portland ME"},"ModuleName":8,"AddressDisplay":"225 HICKS ST Portland
+        ME","MainParcel":"296  B017001","Description":"Housing Safety Registration","DBA":"JOHN
+        H HUTCHINS III: JJ&L CORPORATION","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-02-08T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"5F91A14A-D6EE-4332-AFB0-58B81CA8F203","BusinessStatus":"Active","Highlights":null},{"CaseId":"2225f7dc-26a5-46f8-9a00-ee8a7ac0cd4f","CaseNumber":"20184765","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-12T23:00:02.413","ApplyDate":"2025-12-12T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"165","AddressLine2":"ST
+        JOHN ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"165
+        ST JOHN ST Portland ME"},"ModuleName":8,"AddressDisplay":"165 ST JOHN ST Portland
+        ME","MainParcel":"068  B006001","Description":"Housing Safety Registration","DBA":"Peter
+        J SUELTENFUSS","LicenseYear":null,"CompanyName":"Peter J Sueltenfuss","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-10-12T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"68E0B9DB-028F-424A-AC91-E2F72D54D1B7","BusinessStatus":"Active","Highlights":null},{"CaseId":"22e922db-30c3-447d-b7b5-7aac612c68ba","CaseNumber":"20181571","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-18T08:52:27","ApplyDate":"2025-12-18T08:50:42.92","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"35","AddressLine2":"WAVERLY
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"35
+        WAVERLY ST Portland ME"},"ModuleName":8,"AddressDisplay":"35 WAVERLY ST Portland
+        ME","MainParcel":"146  B006001","Description":"Housing Safety Registration","DBA":"Jerold
+        Hankinson","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-08T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"841B864F-19D6-423E-A2EC-312E3F16E36B","BusinessStatus":"Active","Highlights":null},{"CaseId":"28b8d11c-2ca2-499e-b448-d89460b4d056","CaseNumber":"20182368","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T11:14:42","ApplyDate":"2025-12-17T11:07:52.543","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"15","AddressLine2":"ARLINGTON
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"15
+        ARLINGTON ST Portland ME"},"ModuleName":8,"AddressDisplay":"15 ARLINGTON ST
+        Portland ME","MainParcel":"125  N024001","Description":"","DBA":"Kathryn Charest","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-30T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"1D1AD080-D2CD-4660-B012-AC652F32FA07","BusinessStatus":"Active","Highlights":null},{"CaseId":"315488a7-4c3a-4594-b27c-a51b88cd060c","CaseNumber":"20164780","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T23:00:03.167","ApplyDate":"2025-12-17T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"116","AddressLine2":"WALTON
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"116
+        WALTON ST Portland ME"},"ModuleName":8,"AddressDisplay":"116 WALTON ST Portland
+        ME","MainParcel":"142  H002001","Description":"Housing Safety Registration","DBA":"Justin
+        Barrett: Bishop Holdings, LLC.","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-10-20T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"733692B5-3B5D-4EF4-AF7D-D88B5DC13900","BusinessStatus":"Active","Highlights":null},{"CaseId":"325fcc77-683a-4650-8647-982a80277ee9","CaseNumber":"LTR-000888-2018","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T23:00:03.62","ApplyDate":"2025-12-17T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"11","AddressLine2":"OBRION
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"11
+        OBRION ST Portland ME 04101"},"ModuleName":8,"AddressDisplay":"11 OBRION ST
+        Portland ME 04101","MainParcel":"003  K015001","Description":"","DBA":"MacKenzie
+        Arsenault","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2018-12-03T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"f9271a6b-b882-4401-a314-db207043a592","BusinessStatus":"Active","Highlights":null},{"CaseId":"3a2f2528-33b9-4faa-ae20-457fc7d08899","CaseNumber":"20180013","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-12T13:05:09","ApplyDate":"2025-12-12T13:04:17.46","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"46","AddressLine2":"COLUMBIA
+        RD","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"46
+        COLUMBIA RD   Portland ME 04103"},"ModuleName":8,"AddressDisplay":"46 COLUMBIA
+        RD Portland ME 04103","MainParcel":"181  C008001","Description":"Housing Safety
+        Registration","DBA":"Susan Cassidy","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-08T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"39F472E3-A056-4391-8147-65B2875A29D3","BusinessStatus":"Active","Highlights":null},{"CaseId":"3d360483-ade3-4f46-900f-e36f3cf19ebc","CaseNumber":"LTR-006781-2025","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-09T14:12:36","ApplyDate":"2025-12-09T13:24:41.44","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"67","AddressLine2":"PAYSON
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"67
+        PAYSON ST Portland ME 04102"},"ModuleName":8,"AddressDisplay":"67 PAYSON ST
+        Portland ME 04102","MainParcel":"066A A016001","Description":"","DBA":"Sean
+        Gallagher & Carrie Porcelli","LicenseYear":null,"CompanyName":"Sean Gallagher
+        & Carrie Porcelli","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2025-03-03T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"05fc89c8-460b-45ed-8f73-4db4d5be66df","BusinessStatus":"Active","Highlights":null},{"CaseId":"42506247-399a-4e58-8fbb-58a3ebf10d4c","CaseNumber":"LTR-002643-2020","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T23:00:03.733","ApplyDate":"2025-12-15T13:31:38.68","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"83","AddressLine2":"ANDERSON
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04101","IsMain":true,"FullAddress":"83
+        ANDERSON ST   Portland ME 04101"},"ModuleName":8,"AddressDisplay":"83 ANDERSON
+        ST Portland ME 04101","MainParcel":"012  L001001","Description":"","DBA":"BENJAMIN
+        LISLE & ERIN MURPHY","LicenseYear":null,"CompanyName":"","CompanyTypeName":"General
+        Partnership","BusinessTypeName":"","TaxID":null,"OpenedDate":"2020-09-23T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"83a29871-b2ca-4f46-9de0-daedd25e16b1","BusinessStatus":"Active","Highlights":null},{"CaseId":"4278ae0e-f260-4313-af61-6402910dfd05","CaseNumber":"20162372","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T11:50:11","ApplyDate":"2025-12-16T11:43:44.68","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"164","AddressLine2":"FALMOUTH
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"164
+        FALMOUTH ST Portland ME"},"ModuleName":8,"AddressDisplay":"164 FALMOUTH ST
+        Portland ME","MainParcel":"051  A013001","Description":"Housing Safety Registration","DBA":"Philip
+        Collin","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2015-12-30T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"8F67978E-30E4-4185-8FA8-D7A2E32E5C34","BusinessStatus":"Active","Highlights":null},{"CaseId":"43125f57-28d1-471b-97f9-fe18c745fe24","CaseNumber":"20163227","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T23:00:04.62","ApplyDate":"2025-12-15T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"34","AddressLine2":"EDGEWORTH
+        AVE","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"34
+        EDGEWORTH AVE Portland ME"},"ModuleName":8,"AddressDisplay":"34 EDGEWORTH
+        AVE Portland ME","MainParcel":"183  B009001","Description":"Housing Safety
+        Registration","DBA":"Lavrentia Zoulamis","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-01T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"253EC837-5B96-479C-9031-4AB9B3CB04F2","BusinessStatus":"Active","Highlights":null},{"CaseId":"4625d119-87a5-4f0c-ae47-5a8d73b15693","CaseNumber":"LTR-005759-2023","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T23:00:05.523","ApplyDate":"2025-12-16T08:31:02.553","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"136","AddressLine2":"HIGHLAND
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"136
+        HIGHLAND ST Portland ME 04103"},"ModuleName":8,"AddressDisplay":"136 HIGHLAND
+        ST Portland ME 04103","MainParcel":"123  F016001","Description":"","DBA":"NAA
+        Properties LLC","LicenseYear":null,"CompanyName":"NAA Properties LLC","CompanyTypeName":"Limited
+        Liability Company","BusinessTypeName":"","TaxID":null,"OpenedDate":"2023-11-30T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"7189fedc-09ac-4596-83ff-02efb2cd00fc","BusinessStatus":"Active","Highlights":null},{"CaseId":"4d2619e7-f179-4e07-a022-2c9c2bbaf01c","CaseNumber":"20181282","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-17T10:02:50","ApplyDate":"2025-12-17T09:54:00.107","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"230","AddressLine2":"BRACKETT
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"230
+        BRACKETT ST Portland ME"},"ModuleName":8,"AddressDisplay":"230 BRACKETT ST
+        Portland ME","MainParcel":"055  B050001","Description":"Housing Safety Registration","DBA":"Boulis
+        Kodi","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-06T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"68D3E960-8D66-45D3-A8DD-C21F0D8F1B0D","BusinessStatus":"Active","Highlights":null},{"CaseId":"4e6b1090-7836-4215-9886-f59f800f4d55","CaseNumber":"20173070","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-16T23:00:12.967","ApplyDate":"2025-12-16T05:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"11","AddressLine2":"SAWYER
+        ST","AddressLine3":"","AddressTypeName":"Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"","IsMain":true,"FullAddress":"11
+        SAWYER ST Portland ME"},"ModuleName":8,"AddressDisplay":"11 SAWYER ST Portland
+        ME","MainParcel":"138  C009001","Description":"Housing Safety Registration","DBA":"David
+        Lynch","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2016-01-01T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"C27E9C44-5D98-4179-A454-9D65749D53C9","BusinessStatus":"Active","Highlights":null},{"CaseId":"59c0e616-588b-4515-8f06-586186cc958d","CaseNumber":"LTR-006038-2024","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-14T23:00:04.113","ApplyDate":"2025-12-14T08:00:00","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"36","AddressLine2":"SAWYER
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04103","IsMain":true,"FullAddress":"36
+        SAWYER ST Portland ME 04103"},"ModuleName":8,"AddressDisplay":"36 SAWYER ST
+        Portland ME 04103","MainParcel":"138  A012001","Description":"","DBA":"ELIZABETH
+        KANE","LicenseYear":null,"CompanyName":"ELIZABETH KANE","CompanyTypeName":"Sole
+        Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2024-03-27T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"b7e1458a-7af7-433b-a54b-53932195cbe7","BusinessStatus":"Active","Highlights":null},{"CaseId":"5e9fad91-4c9d-4810-9a41-1016e849c9d1","CaseNumber":"LTR-002058-2019","CaseTypeId":null,"CaseType":"Long
+        Term Housing Registration - Two Family","CaseWorkclassId":null,"CaseWorkclass":"Two
+        Family","CaseStatusId":null,"CaseStatus":"Issued","ProjectName":null,"IssueDate":"2025-12-15T23:00:06.273","ApplyDate":"2025-12-15T14:36:37.943","ExpireDate":"2026-12-31T00:00:00","CompleteDate":null,"FinalDate":null,"RequestDate":null,"ScheduleDate":null,"StartDate":null,"ExpectedEndDate":null,"Address":{"CountryTypeId":0,"CountryTypeName":"US","CountryName":null,"StreetTypeName":"","PreDirection":"","PostDirection":"","AddressLine1":"140","AddressLine2":"CLARK
+        ST","AddressLine3":"","AddressTypeName":"Project Location","UnitOrSuite":"
+        ","City":"Portland","StateName":"ME","ProvinceName":"","RuralRoute":"","POBox":"","Station":"","CompSite":"","ATTN":"","PostalCode":"04102","IsMain":true,"FullAddress":"140
+        CLARK ST   Portland ME 04102"},"ModuleName":8,"AddressDisplay":"140 CLARK
+        ST Portland ME 04102","MainParcel":"056  G044001","Description":"","DBA":"JACK
+        TUCHMAN","LicenseYear":null,"CompanyName":"","CompanyTypeName":"Sole Proprietorship","BusinessTypeName":"","TaxID":null,"OpenedDate":"2019-12-23T00:00:00","ClosedDate":null,"LastAuditDate":null,"HolderCompanyName":null,"HolderFirstName":"","HolderLastName":"","HolderMiddleName":"","BusinessId":"d39ce2a5-7c1a-4241-9150-4c965424a06d","BusinessStatus":"Active","Highlights":null}],"TotalPages":62,"PermitsFound":0,"PlansFound":0,"InspectionsFound":0,"CodeCasesFound":0,"RequestsFound":0,"BusinessLicensesFound":0,"ProfessionalLicensesFound":0,"LicensesFound":0,"ProjectsFound":0,"OperationalPermitsFound":0,"TotalFound":1228},"Success":true,"ErrorMessage":"","ValidationErrorMessage":"","ConcurrencyErrorMessage":"","StatusCode":200,"BrokenRules":[]}'
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '29490'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 26 Mar 2026 15:11:16 GMT
+      Expires:
+      - '-1'
+      Pragma:
+      - no-cache
+      Server:
+      - Microsoft-IIS/10.0
+      - Microsoft-IIS/10.0
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-AspNet-Version:
+      - 4.0.30319
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - ASP.NET
+      X-XSS-Protection:
+      - '1'
+      frame-ancestors:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+version: 1
