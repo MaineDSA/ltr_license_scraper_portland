@@ -17,6 +17,7 @@ def scraper(session: Session) -> LicenseScraper:
         test_mode=True,
         output_file=Path("output.csv"),
         issue_date_from="2025-01-01",
+        rate_limit_delay=0.1,
     )
     return LicenseScraper(session, config)
 
