@@ -16,7 +16,7 @@ import pandas as pd
 from requests import Session
 from tqdm import tqdm
 
-from api_payloads import LicenseType, build_search_payload
+from api_payloads import REQUEST_HEADERS, LicenseType, build_search_payload
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -54,14 +54,6 @@ class APIEndpoints:
     @property
     def search(self) -> str:
         return f"{self.base_url}/search/search"
-
-
-REQUEST_HEADERS = {
-    "tenantId": "1",
-    "tenantName": "EnerGovProd",
-    "Referer": "https://selfservice.portlandmaine.gov/energov_prod/selfservice",
-    "DNT": "1",
-}
 
 
 class LicenseScraper:

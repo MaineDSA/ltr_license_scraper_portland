@@ -8,6 +8,13 @@ the request, even if they are set to None.
 
 from enum import Enum
 
+REQUEST_HEADERS = {
+    "tenantId": "1",
+    "tenantName": "EnerGovProd",
+    "Referer": "https://selfservice.portlandmaine.gov/energov_prod/selfservice",
+    "DNT": "1",
+}
+
 
 class LicenseType(Enum):
     """License types for different property categories."""
