@@ -16,7 +16,7 @@ import pandas as pd
 from requests import Session
 from tqdm import tqdm
 
-from api_payloads import REQUEST_HEADERS, LicenseType, build_search_payload
+from src.api_payloads import REQUEST_HEADERS, LicenseType, build_search_payload
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
