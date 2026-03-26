@@ -24,6 +24,7 @@ dev = [
     {include-group = "lint"},
     {include-group = "pre-commit"},
     {include-group = "security"},
+    {include-group = "test-coverage"},
     {include-group = "types"},
 ]
 lint = [
@@ -35,6 +36,15 @@ pre-commit = [
 ]
 security = [
     "bandit[sarif]==1.9.4",
+]
+test-coverage = [
+    "pytest-cov~=7.0.0",
+    {include-group = "test"},
+]
+test = [
+    "pytest~=9.0.2",
+    "pytest-recording~=0.13.4",
+    "pytest-xdist~=3.8.0",
 ]
 types = [
     "mypy~=1.19.1",
@@ -118,4 +128,23 @@ ignore = [
 "**/{tests,docs}/*" = [
     "SLF001",  # private-member-access (SLF001)
     "PLR2004",  # magic-value-comparison (PLR2004)
+]
+
+[tool.pytest]
+addopts = ["-n", "auto", "--cov=src", "--no-cov-on-fail"]
+testpaths = [
+    "tests",
+]
+
+[tool.coverage]
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+
+[tool.coverage.report]
+exclude_also = [
+    "logger\\.",
+    'if __name__ == "__main__":',
+    "asyncio\\.run\\(main\\(\\)\\)",
 ]
