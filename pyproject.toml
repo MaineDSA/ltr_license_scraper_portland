@@ -16,7 +16,7 @@ dependencies = [
 ltr_license_scraper_portland = "src.license_downloader:main"
 
 [build-system]
-requires = ["setuptools>=80.0"]
+requires = ["setuptools>=82.0.1"]
 build-backend = "setuptools.build_meta"
 
 [dependency-groups]
