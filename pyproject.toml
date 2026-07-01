@@ -9,7 +9,7 @@ urls = { "GitHub" = "https://github.com/MaineDSA/ltr_license_scraper_portland" }
 dependencies = [
     "pandas~=3.0.3",
     "requests~=2.34.2",
-    "tqdm~=4.67.3",
+    "tqdm~=4.68.3",
 ]
 
 [project.scripts]
